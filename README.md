@@ -1,5 +1,4 @@
 # itgmerch
 ITG Merchandise
 
-What is this?
-I don't know.
+Start page for the project in the title, Felix, please upload files now.
