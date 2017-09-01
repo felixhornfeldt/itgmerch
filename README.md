@@ -12,3 +12,4 @@ Selling merch for IT-Gymnasiet Göteborg.
 
 ### TODO - front-end
 + Felix - add your todos here.
++ Lär dig förstå client-server achitecture
