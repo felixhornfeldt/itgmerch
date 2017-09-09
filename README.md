@@ -7,9 +7,12 @@ Set to launch in the end of October.
 Selling merch for IT-Gymnasiet Göteborg.
 
 ### TODO - server side
-+ Integrate main page and templates into devserver
++ (In progress) Integrate main page and templates into devserver
 + Look up google auth
++ Decide if static content or cdn for images
++ start writing code for reservation
 
 ### TODO - front-end
 + Felix - add your todos here.
 + Lär dig förstå client-server achitecture
++ Get product images
