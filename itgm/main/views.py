@@ -5,5 +5,5 @@ from django.shortcuts import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Weheyy!")
+    return render(request, 'main/index.html')
 
