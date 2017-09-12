@@ -1,0 +1,143 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.h2-shop-head h2 {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.shopping-cart-head {
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+}
+
+.shopping-cart-info-p p{
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    padding-left: 500px;
+    padding-right: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.blue {
+    color: dodgerblue;
+}
+
+.pink {
+    color: deeppink;
+}
+
+.orange {
+    color: darkorange;
+}
+
+/*-----------------------------------------*/
+
+strong {
+	font-weight: bold;
+}
+
+.cart-body-label-list ul {
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
+}
+
+.cart-body-label-list ul li {
+  	color: #000;
+  	display: inline-block;
+  	padding: 0.625rem 0;
+  	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	border-bottom: 2px solid #000;
+	margin-bottom: 0.625rem;
+	border-top: 2px solid #000;
+}
+
+.produkt {
+  	width: 40%;
+	align-items: center;
+	display: flex;
+	/*flex-wrap: wrap;*/
+}
+
+.basket-content {
+	width: 100%;
+}
+
+.price, .quantity, .remove, .total-price {
+	width: 12.5%;
+}
+
+.price, .quantity, .total-price, .produkt {
+	text-align: center;
+	float: left;
+}
+
+.produkt .produkt-img img {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #156;
+}
+
+.produkt-img {
+	width: 35%;
+}
+
+.produkt-information {
+	width: 65%;
+	text-align: left;
+}
+
+.shopping-body {
+	width: 1200px;
+	max-width: 100%;
+}
+
+.remove {
+  bottom: 1.125rem;
+  float: left;
+  text-align: left;
+  width: 45%;
+}
+
+.remove p {
+  background-color: transparent;
+  color: #777;
+  float: none;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.remove p:hover {
+	cursor: pointer;
+	color: #000;
+}
+
+.produkt-information h2 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.produkt-information p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.price1:after, .price2:after, .price3:after, .total-price1:after {
+	content: 'kr.'
+}
+
+.quantity-content {
+	width: 50%;
+	padding: 2%;
+	border: 1px solid #000;
+	border-radius: 5px;
+}

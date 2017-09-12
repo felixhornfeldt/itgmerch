@@ -1,0 +1,104 @@
+<!Doctype html>
+    <html>
+        <head>
+            
+            <!--fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" >
+            
+            <!--CSS Stylesheets-->
+            <link rel="stylesheet" type="text/css" href="test.css" />
+            
+            <!--scale and charset-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+            
+            <!--Title of page-->
+            <title>ITG Market</title>
+            
+            <!--Icon Head-->
+            <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-32x32.png" sizes="32x32" />
+            <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-192x192.png" sizes="192x192" />
+            <link rel="apple-touch-icon-precomposed" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-180x180.png" />
+            <meta name="msapplication-TileImage" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-270x270.png" />
+            
+            <!-- ? -->
+            <link rel="stylesheet" id="coToolbarStyle" type="text/css" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" />
+            
+            <!-- Icon library FB TW IG etc. -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+            
+            <!-- Javascript links-->
+            <script src="test.js" type="text/javascript"></script>
+             
+        </head>
+        <body>
+            <div id="shooping-cart">
+                <div id="middle-plac-in">
+                    <div id="shopping-cart-content-body">
+                        <div id="shopping-cart-section" class="shopping-cart">
+                            <div id="shopping-cart-head" class="shopping-cart-head">
+                                <div class="h2-shop-head">
+                                    <h2><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Kundvagn</h2>
+                                </div>
+                                <div class="shopping-cart-info-p">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.</p>
+                                </div>
+                            </div>
+                            <div id="shopping-cart-content" class="shopping-body">
+                                <div id="content-of-cart">
+                                    <div id="content-body-shopping">
+                                        <div class="top-head-body-cart">
+                                            <div class="cart-body-label-list">
+                                                <ul>
+                                                    <li class="produkt produkt-head">Produktinformation</li>
+                                                    <li class="price">Price</li>
+                                                    <li class="quantity">Quantity</li>
+                                                    <li class="total-price">Total price</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div id="body-content-space">
+                                        	<div class="basket-cart">
+                                        		<div class="basket-content">
+                                        			<div class="produkt">
+                                        				<div class="produkt-img">
+                                        					<img src="https://i.pinimg.com/736x/b9/e9/81/b9e98191496f7bc31aa26226d30a589d--wolf-eyes-wolves-art.jpg" alt="Please reload site" />
+                                        				</div>
+                                        				<div class="produkt-information">
+                                        					<h2><strong><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> T-shirt</strong></h2>
+                                        					<p>Tröjan är Unisex.</p>
+                                        						<div class="produkt-size-select">
+                                        							<select>
+                                        								<option>XS</option>
+                                        								<option>S</option>
+                                        								<option>M</option>
+                                        								<option>L</option>
+                                        								<option>XL</option>
+                                        								<option>XXL</option>
+                                        							</select>
+                                        						</div>
+                                        					<p>Produkt code: 2549067-1647</p>
+                                        					<div class="remove remove-button" onclick="removeItem(this)" >
+                                        						<p>Remove</p>
+                                        					</div>
+														</div>
+                                        			</div>
+                                        			<div class="price">
+                                        				<div class="price1" id="price1">80.00</div>
+                                        			</div>
+                                        			<div class="quantity">
+                                        				<input id="quantity" type="number" value="1" min="0" max="5" class="quantity-content" onchange="calculate()">
+                                        			</div>
+													<output class="total-price total-price1" id="total-price"></output>
+                                        		</div>
+                                        	</div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>

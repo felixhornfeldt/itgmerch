@@ -44,7 +44,7 @@ i.fa {
     color: #fff;
 }
 
-#hover-dodgerblue img:hover {
+/*#hover-dodgerblue img:hover {
     background-color: dodgerblue;
 }
 
@@ -54,7 +54,8 @@ i.fa {
 
 #hover-darkorange img:hover {
     background-color: darkorange;
-}
+}*/
+
 
 /* Header CSS */
 
@@ -97,7 +98,7 @@ i.fa-cart-plus {
 }
 
 i.fa-cart-plus:hover {
-    background:  linear-gradient(dodgerblue, deeppink, darkorange)
+    background: linear-gradient(dodgerblue, deeppink, darkorange);
 }
 
 
@@ -165,17 +166,28 @@ i.fa-cart-plus:hover {
 }
 
 .merch img {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     padding: 20px;
-    margin-top: 25px;
+    margin-top: 5px;
     justify-content: center;
 }
 
 .merch img:hover {
     cursor: pointer;
-    background-color: #fff;
+    background:  linear-gradient(dodgerblue, deeppink, darkorange);
     border-radius: 20%;
+}
+
+#p-show {
+    text-align: center;
+    vertical-align: baseline;
+    font-size: 28px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    padding: 0;
+    border: 0;
+    font-weight: 100;
 }
 
 
@@ -288,14 +300,16 @@ footer p {
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+
 /* Targaryen Stark Lannister CSS (test-html also) produkt template*/
+
 
 #information-about-merch {
     padding: 25px;
 }
 
-.inforamtion-img-txt-button {
-    align-items: flex-start;
+.information-merch-produkt-content {
+    align-items: flex-start;;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -344,16 +358,109 @@ i.fa-cart-arrow-down {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 80px;
+    font-size: 70px;
 }
 
 i.fa-cart-arrow-down:hover {
     opacity: 0.7;
 }
 
+.size p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.size select, option {
+    font-size:18px;
+}
+
+.size select {
+    margin-bottom: 1.5rem;
+}
+
+#price-info p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+
 /* Shopping-Cart CSS */
+
+
+table {
+    /*border: 1px solid #000;*/
+}
+
+thead tr {
+    border-bottom: 2px solid #000 !important;
+}
+
+thead tr th{
+    border-right: 2px solid #000;
+    font-size: 25px;
+    min-width: 150px;
+}
+
+tbody tr td{
+    /*border: 1px solid #000;*/
+}
+
+.h2-shop-head h2 {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.shopping-cart-head {
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+}
+
+.shopping-cart-info-p p{
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    padding-left: 500px;
+    padding-right: 500px;
+    margin-bottom: 1.5rem;
+}
+
+tbody tr td img {
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+i.fa-close {
+    color: red;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 40px;
+    width: 150px;
+}
+
+i.fa-close:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+tbody tr td p {
+    color: #000;
+    text-align: center;
+}
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -390,14 +497,13 @@ i.fa-cart-arrow-down:hover {
     }
     
     .merch img {
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 200px;
     }
     
-    /*NEW*/
     .info-img img {
-        width: 550px;
-        height: 550px;
+        width: 525px;
+        height: 525px;
     }
     
     .info-txt {
@@ -414,6 +520,10 @@ i.fa-cart-arrow-down:hover {
     
     .info-txt p {
         font-size: 18px;
+    }
+    
+    #p-show {
+        font-size: 22px;
     }
     
 }
