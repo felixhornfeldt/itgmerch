@@ -19,5 +19,8 @@ from main import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('main.urls'))
+    url(r'', include('main.urls')),
+    url(r'^order/', include('order.urls')),
+    url("^soc/", include("social_django.urls", namespace="social")),
+
 ]
