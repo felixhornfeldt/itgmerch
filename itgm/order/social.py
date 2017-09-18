@@ -8,7 +8,7 @@ def validate_usr(backend, user, response, *args, **kwargs):
         name = response['displayName']
         print(email)
         if re.match('^[\w!#$%&*+\/=?^`{|}~-]+(?:\.[\w!#$%&*+\/=?`{|}~-]+)*@+(?:itggot\.se)$', email):
-            return redirect('/order/success?email=' + email + '&name=' + name)
+            return redirect('/order/review?email=' + email + '&name=' + name)
         else:
             return redirect('/order/failed?email=' + email)
 
