@@ -52,6 +52,6 @@ def review(request):
         name = request.session['name']
         # request.session['name'] = name
 
-        return HttpResponse("Name: " + name + " and email: " + email + " correct? Click <a href='success'>Continue</a>")
+        return render(request, 'order/review.html', {'name': name, 'email': email})
 
 

@@ -12,7 +12,7 @@ def email(usr_email, name, order_number):
     msg_html = render_to_string('order/email.html', {'name': name, 'order_number': order_number})
 
     send_mail(
-        'Test email',
+        'ITG Marketplace order #' + str(order_number),
         msg_plain,
         from_email,
         to_email,

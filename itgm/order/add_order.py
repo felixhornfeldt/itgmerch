@@ -9,7 +9,7 @@ def add_order(name, email):
 		email=email,
 		order_number=order_number,
 		order="empty",
-		time=datetime.datetime.now()
+		date_time=datetime.datetime.now()
 	)
 	print("Order added.")
 	return order_number
