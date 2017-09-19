@@ -3,7 +3,7 @@ from django.shortcuts import HttpResponse, HttpResponseRedirect
 from django.conf import settings
 from .email import email
 import re
-# Create your views here.
+from .add_order import add_order
 
 
 def success(request):
@@ -11,7 +11,8 @@ def success(request):
         usr_email = request.session['email']
         name = request.session['name']
         if re.match('^[\w!#$%&*+\/=?^`{|}~-]+(?:\.[\w!#$%&*+\/=?`{|}~-]+)*@+(?:itggot\.se)$', usr_email):
-            email(usr_email, name)
+            order_n = add_order(name, usr_email)
+            email(usr_email, name, order_n)
 
             # Add order to database
             return HttpResponse("Congratulations " + name + "! Email sent.")
@@ -28,6 +29,7 @@ def rdr(request):
 
 
 def index(request):
+    # Get order, add to session
     return HttpResponseRedirect("/soc/login/google-oauth2/?next=/order/review")
 
 

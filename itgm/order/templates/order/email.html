@@ -5,9 +5,12 @@
     <title>Email</title>
 </head>
 <body>
-    <h1>Hello {{ name }}!</h1>
-    <p>Your order has been created, your order number is: order_number.<br>
-        You are welcome to collect your order tomorrow at the café.</p>
+    <h1>Hej {{ name }}!</h1>
+    <p>Din order är skapad, och du har blivit tilldelad ordernummer: {{ order_number }}.<br>
+        Du är välkommen att hämta ut ordern nästa arbetsdag hos Nina i cafét.<br>
+    Ange då de fyra sista siffrorna i ordernumret.</p>
+    <p>Din order ser ut så här:</p>
+    <p>{ order }</p>
     <p>Sincerely, <br>ITG Marketplace</p>
 </body>
 </html>
