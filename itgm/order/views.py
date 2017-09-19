@@ -19,8 +19,16 @@ def success(request):
             return HttpResponseRedirect('/order/failed?email=' + usr_email)
 
 
+def rdr(request):
+    if request.method == "GET":
+        request.session['email'] = request.GET.get('email', 'a@example.com')
+        request.session['name'] = request.GET.get('name', 'John Doe')
+
+        return HttpResponseRedirect('review')
+
+
 def index(request):
-    return HttpResponseRedirect("/soc/login/google-oauth2/?next=/success")
+    return HttpResponseRedirect("/soc/login/google-oauth2/?next=/order/review")
 
 
 def failed(request):
@@ -32,11 +40,16 @@ def failed(request):
 
 
 def review(request):
-    if request.method == "GET":
-        email = request.GET.get('email', 'a')
-        request.session['email'] = email
+    # if request.method == "POST":
 
-        name = request.GET.get('name', 'John Doe')
-        request.session['name'] = name
+        # email = request.POST.get('email', 'a')
+        # request.session['email'] = email
+
+        email = request.session['email']
+
+        name = request.session['name']
+        # request.session['name'] = name
 
         return HttpResponse("Name: " + name + " and email: " + email + " correct? Click <a href='success'>Continue</a>")
+
+
