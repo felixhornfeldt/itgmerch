@@ -9,7 +9,7 @@ from .add_order import add_order
 def success(request):
     if request.method == "GET":
         if 'email' not in request.session:
-            return HttpResponse("No.")
+            return HttpResponseRedirect('order/error?err=2')
 
         usr_email = request.session['email']
         name = request.session['name']
@@ -23,12 +23,12 @@ def success(request):
 
             return render(request, 'order/success.html', {'name': name, 'order_number': order_n, 'email': usr_email})
         else:
-            return HttpResponseRedirect('/order/failed?email=' + usr_email)
+            return HttpResponseRedirect('/order/error?err=1')
 
 
 def rdr(request):
     if request.method == "GET":
-        request.session['email'] = request.GET.get('email', 'a@example.com')
+        request.session['email'] = request.GET.get('email', 'example@example.com')
         request.session['name'] = request.GET.get('name', 'John Doe')
 
         return HttpResponseRedirect('review')
@@ -39,12 +39,19 @@ def index(request):
     return HttpResponseRedirect("/soc/login/google-oauth2/?next=/order/review")
 
 
-def failed(request):
+def error(request):
     if request.method == "GET":
-        email = request.GET.get('email', '')
-        return HttpResponse("It looks like your email " + email + " didn't pass as an ITG-connected one.")
+        error_code = request.GET.get('err', 0)
+        error_message = ""
+
+        if error_code is "1":
+            error_message = "Your email did not pass validation, are you sure you signed in with your school email?"
+        elif error_code is "2":
+            error_message = "You tried to order again. Please don't do that."
+
+        return render(request, 'order/error.html', {'error_code': error_code, 'error_message': error_message})
     else:
-        return HttpResponse("Something went wrong.")
+        return render(request, 'order/error.html', {'error_code': 0, 'error_message': "No message specified."})
 
 
 def review(request):
