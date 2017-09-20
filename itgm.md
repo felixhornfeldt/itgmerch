@@ -24,3 +24,8 @@
 
 Domän: itgwebshop.se eller itgmerch.se
 
+### Used python packages
+python-social-auth
+python-social-auth-django
+
+

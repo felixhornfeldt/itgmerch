@@ -8,14 +8,20 @@ from .add_order import add_order
 
 def success(request):
     if request.method == "GET":
+        if 'email' not in request.session:
+            return HttpResponse("No.")
+
         usr_email = request.session['email']
         name = request.session['name']
         if re.match('^[\w!#$%&*+\/=?^`{|}~-]+(?:\.[\w!#$%&*+\/=?`{|}~-]+)*@+(?:itggot\.se)$', usr_email):
-            order_n = add_order(name, usr_email)
-            email(usr_email, name, order_n)
-
             # Add order to database
-            return HttpResponse("Congratulations " + name + "! Email sent.")
+            order_n = add_order(name, usr_email)
+            # Send an email
+            email(usr_email, name, order_n)
+            # Flush session to prevent reordering by reloading
+            request.session.flush()
+
+            return render(request, 'order/success.html', {'name': name, 'order_number': order_n, 'email': usr_email})
         else:
             return HttpResponseRedirect('/order/failed?email=' + usr_email)
 
@@ -42,16 +48,6 @@ def failed(request):
 
 
 def review(request):
-    # if request.method == "POST":
-
-        # email = request.POST.get('email', 'a')
-        # request.session['email'] = email
-
         email = request.session['email']
-
         name = request.session['name']
-        # request.session['name'] = name
-
         return render(request, 'order/review.html', {'name': name, 'email': email})
-
-

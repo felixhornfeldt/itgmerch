@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+body {
+    width: 50%;
+    border: 0px solid black;
+    margin: 1vw;
+    font-family: arial, sans-serif;
+    margin-left:auto;margin-right:auto;width:50%;
+}
+
+div {
+    margin: 5px;
+    margin-left:auto;margin-right:auto;width:50%;
+}
