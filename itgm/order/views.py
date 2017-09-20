@@ -9,7 +9,7 @@ from .add_order import add_order
 def success(request):
     if request.method == "GET":
         if 'email' not in request.session:
-            return HttpResponseRedirect('order/error?err=2')
+            return HttpResponseRedirect('error?err=2')
 
         usr_email = request.session['email']
         name = request.session['name']
