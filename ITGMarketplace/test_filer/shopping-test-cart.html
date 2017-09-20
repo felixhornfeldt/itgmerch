@@ -60,6 +60,8 @@
                                         <div id="body-content-space">
                                         	<div class="basket-cart">
                                         		<div class="basket-content">
+                                        		<button onclick="show()">SHOW ME</button>
+                                        		<section id="section1" class="hide">
                                         			<div class="produkt">
                                         				<div class="produkt-img">
                                         					<img src="https://i.pinimg.com/736x/b9/e9/81/b9e98191496f7bc31aa26226d30a589d--wolf-eyes-wolves-art.jpg" alt="Please reload site" />
@@ -78,7 +80,7 @@
                                         							</select>
                                         						</div>
                                         					<p>Produkt code: 2549067-1647</p>
-                                        					<div class="remove remove-button" onclick="removeItem(this)" >
+                                        					<div class="remove remove-button" onclick="remove()" >
                                         						<p>Remove</p>
                                         					</div>
 														</div>
@@ -90,6 +92,39 @@
                                         				<input id="quantity" type="number" value="1" min="0" max="5" class="quantity-content" onchange="calculate()">
                                         			</div>
 													<output class="total-price total-price1" id="total-price"></output>
+													</section>
+                                       			<section id="section2" class="hide">
+                                        			<div class="produkt">
+                                        				<div class="produkt-img">
+                                        					<img src="https://i.pinimg.com/736x/b9/e9/81/b9e98191496f7bc31aa26226d30a589d--wolf-eyes-wolves-art.jpg" alt="Please reload site" />
+                                        				</div>
+                                        				<div class="produkt-information">
+                                        					<h2><strong><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> T-shirt</strong></h2>
+                                        					<p>Tröjan är Unisex.</p>
+                                        						<div class="produkt-size-select">
+                                        							<select>
+                                        								<option>XS</option>
+                                        								<option>S</option>
+                                        								<option>M</option>
+                                        								<option>L</option>
+                                        								<option>XL</option>
+                                        								<option>XXL</option>
+                                        							</select>
+                                        						</div>
+                                        					<p>Produkt code: 2549067-1647</p>
+                                        					<div class="remove remove-button" onclick="remove()" >
+                                        						<p>Remove</p>
+                                        					</div>
+														</div>
+                                        			</div>
+                                        			<div class="price">
+                                        				<div class="price1" id="price1">80.00</div>
+                                        			</div>
+                                        			<div class="quantity">
+                                        				<input id="quantity" type="number" value="1" min="0" max="5" class="quantity-content" onchange="calculate()">
+                                        			</div>
+													<output class="total-price total-price1" id="total-price"></output>
+													</section>
                                         		</div>
                                         	</div>
                                         </div> 
