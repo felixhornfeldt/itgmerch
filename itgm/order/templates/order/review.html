@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'order/order.css' %}" />
+    <meta charset="UTF-8">
+    <title>Kontrollera order</title>
+</head>
+<body>
+    <div>
+        <h2>Kontrollera din order</h2>
+        <p>Detta är uppgifterna vi lyckades hämta från Google. Kontrollera om dessa stämmer.</p>
+    
+        <table>
+            <tr>
+                <th>
+                    Namn
+                </th>
+                <td>
+                    {{ name }}
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    E-post:
+                </th>
+                <td>
+                    {{ email }}
+                </td>
+            </tr>
+        </table>
+            <p>
+                <form action="success">
+                    <button type="submit" value="Confirm">Godkänn</button>
+                    <button type="submit" formaction="/">Avbryt</button>
+                </form>
+            </p>
+        
+    </div>
+
+    
+</body>
+</html>

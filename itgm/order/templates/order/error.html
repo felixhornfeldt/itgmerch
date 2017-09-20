@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'order/order.css' %}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Error {{ error_code }}</title>
+</head>
+<body>
+    <div>
+        <h1>Something went wrong.</h1>
+        <p>We think something didn't work as it should have. This is what the server thinks it was:</p>
+        <p>Errno {{ error_code  }}: {{ error_message }}</p>
+    </div>
+</body>
+</html>

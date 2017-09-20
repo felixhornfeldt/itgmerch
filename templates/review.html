@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontrollera order</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+       
+</head>
+<body>
+    <h2>Kontrollera din order</h2>
+    <p>Detta är uppgifterna vi lyckades hämta från Google. Kontrollera om dessa stämmer.</p>
+
+    <table>
+        <tr>
+            <th>
+                Namn
+            </th>
+            <td>
+                {{ name }}
+            </td>
+        </tr>
+        <tr>
+            <th>
+                E-post:
+            </th>
+            <td>
+                {{ email }}
+            </td>
+        </tr>
+    </table>
+    <form action="success">
+        <button type="submit" value="Confirm">Godkänn</button>
+        <button type="submit" formaction="/">Avbryt</button>
+    </form>
+    
+</body>
+</html>

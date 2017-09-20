@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'order/order.css' %}" />
+    <meta charset="UTF-8">
+    <title>Din order är skickad</title>
+</head>
+<body>
+    <div>
+        <h2>Äntligen! Ditt merch är på väg!</h2>
+        <p>Tack för din beställning {{ name }}!</p>
+        <p>Du har fått ordernummer: {{ order_number }}.<br>
+        Du är välkommen att hämta ut ordern nästa arbetsdag eller på förbestämt datum.<br>
+        En kopia på all information har också skickats till {{ email }}</p>
+        <a href="/">Tillbaka till webshoppen</a>
+    </div>
+    
+    
+</body>
+</html>
