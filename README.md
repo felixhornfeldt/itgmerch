@@ -17,3 +17,4 @@ Selling merch for IT-Gymnasiet Göteborg.
 + Felix - add your todos here.
 + Lär dig förstå client-server achitecture
 + Get product images
++ Få igång JS Script
