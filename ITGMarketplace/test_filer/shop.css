@@ -1,0 +1,19 @@
+main {
+    background-color: #ffffff;
+}
+
+.simpleCart_shelfItem {
+    color: #000000;
+    margin: 25px;
+    align-items: center;
+    display: inline;
+}
+
+.item_pic_t_shirt {
+    width: 150px;
+    height: 150px;
+}
+
+.simpleCart_shelfItem h3 {
+    color: #000000;
+}

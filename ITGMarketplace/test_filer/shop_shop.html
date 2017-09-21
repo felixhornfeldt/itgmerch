@@ -7,7 +7,7 @@
             
             <!--CSS Stylesheets-->
             <link rel="stylesheet" type="text/css" href="shop.css" >
-            <link rel="stylesheet" type="text/css" href="/ITGMarketplace/CSS\main.css" >
+            <link rel="stylesheet" type="text/css" href="main_test.css" >
             
             <!--scale and charset-->
             <meta charset="utf-8">
@@ -29,8 +29,8 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
             
             <!-- Javascript links-->
-            <script src="C:\Users\felix.hornfeldt\Brackets\itgm\ITGMarketplace\wojodesign-simplecart-js-51a9a38\simpleCart.js" type="text/javascript"></script>
-            <script src="C:\Users\felix.hornfeldt\Brackets\itgm\ITGMarketplace\wojodesign-simplecart-js-51a9a38\simpleCart.min.js" type="text/javascript"></script>
+            <script src="..\wojodesign-simplecart-js-51a9a38\simpleCart.js" type="text/javascript"></script>
+            
         </head>
         <body>
             <header>
@@ -56,27 +56,33 @@
                     </div>
                 </div>
             </header>
+            <div class="f1f1f1-color-div"></div>
             <main>
                 <div id="main_div">
                     <div id="shopping_cart">
                         <div id="shelf">
                             <div class="simpleCart_shelfItem">
                                 <h3 class="item_t_shirt">ITG T-Shirt</h3>
-                                <img src="https://i.pinimg.com/736x/b9/e9/81/b9e98191496f7bc31aa26226d30a589d--wolf-eyes-wolves-art.jpg" alt="Please reload site" class="item_pic_t_shirt" />
+                                <img src="https://i.pinimg.com/736x/b9/e9/81/b9e98191496f7bc31aa26226d30a589d--wolf-eyes-wolves-art.jpg" alt="Please reload site" class="item_pic_t_shirt" /><br>
                                 <select class="item_size">
                                     <option value="X-Small">XS</option>
                                     <option value="Small">S</option>
                                     <option value="Medium">M</option>
                                     <option value="Large">L</option>
                                     <option value="X-Large">XL</option>
-                                </select>
-                                <input type="text" value="1" class="item_quantity">
-                                <span class=""
+                                </select><br>
+                                <input type="number" value="1" max="5" class="item_quantity"><br>
+                                <span class="item_price">80.00kr</span><br>
+                                <input type="button" class="item_add" value="Add to cart"/>
                             </div>
+                        </div>
+                        <div id="shopping_body_content">
+                            <div class="simpleCart_items"></div>
                         </div>
                     </div>
                 </div>
             </main>
+            <div class="f1f1f1-color-div"></div>
             <footer>
                 <div id="footer-div">
                     <div class="footer-div-content">
