@@ -1,5 +1,6 @@
 main {
     background-color: #ffffff;
+    padding: 50px;
 }
 
 .simpleCart_shelfItem {
@@ -15,5 +16,9 @@ main {
 }
 
 .simpleCart_shelfItem h3 {
+    color: #000000;
+}
+
+main p {
     color: #000000;
 }
