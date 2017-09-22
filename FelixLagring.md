@@ -31,3 +31,31 @@
 ### För att Simplecart JS ska fungera så behövs även jquery filen, annars blir det "inte bra"
             <script src="inc/jquery.1.6.1.min.js"></script>
 	        <script src="../simpleCart.js"></script>
+
+### Simple Head Code
+       
+            <!--Fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" >
+            
+            <!--CSS Stylesheets-->
+            <link rel="stylesheet" type="text/css" href="CSS\main.css" />
+            
+            <!--scale and charset-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+            
+            <!--Title of page-->
+            <title>ITG Market</title>
+            
+            <!--Icon Head-->
+            <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-32x32.png" sizes="32x32" />
+            <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-192x192.png" sizes="192x192" />
+            <link rel="apple-touch-icon-precomposed" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-180x180.png" />
+            <meta name="msapplication-TileImage" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-270x270.png" />
+            
+            <!-- ? -->
+            <link rel="stylesheet" id="coToolbarStyle" type="text/css" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" />
+            
+            <!-- Icon library FB TW IG etc. -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+             
