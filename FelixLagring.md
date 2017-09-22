@@ -27,3 +27,7 @@
 
             <link rel="stylesheet" type="text/css" href="shop.css" >
             <link rel="stylesheet" type="text/css" href="../CSS/main.css" >
+            
+### För att Simplecart JS ska fungera så behövs även jquery filen, annars blir det "inte bra"
+            <script src="inc/jquery.1.6.1.min.js"></script>
+	        <script src="../simpleCart.js"></script>

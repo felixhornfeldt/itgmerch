@@ -1,38 +1,12 @@
 <!DOCTYPE html>  
 <html>  
 <head>  
-    <title>simpleCart(js) - QUnit Test Suite</title>  
-    <link rel="stylesheet" href="css/qunit.css" type="text/css" media="screen">  
-
-	<script>/*<![CDATA[*/!window.QUnit && document.write('<script src="inc/qunit.js"><\/script>')/*]]>*/</script>
-	<script src="http://swarm.simplecartjs.com/js/inject.js"></script>
-	<script src="inc/jquery.1.6.1.min.js"></script>
-	<script src="../simpleCart.js"></script>
-
-
-    <!-- Your project file goes here -->  
-	<!--<script>/*<![CDATA[*/
+	<title>simpleCart(js) - QUnit Test Suite</title>
 	
-	if( QUnit.urlParams.lib && QUnit.urlParams.ver ){
-		document.write('<script src="https://ajax.googleapis.com/ajax/libs/'+ 
-					QUnit.urlParams.lib + '/' + 
-					QUnit.urlParams.ver + '/' + 
-					QUnit.urlParams.lib + '.js"><\/script>');
-	} else {
-		document.write('<script src="inc/jquery.1.6.1.min.js"><\/script>');
-	}
-	
-	if( QUnit.urlParams.commit ){
-		document.write('<script src="inc/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'/simpleCart.js"><\/script>');
-		document.write('<script src="inc/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'/test/test.core.js"><\/script>');
-	} else {
-		document.write('<script src="../simpleCart.js"><\/script>');
-		document.write('<script type="text/javascript" src="test.core.js"><\/script>');
-	}
-	/*]]>*/</script>-->
+	<script src="wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js"></script>
+	<script src="wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
 
-	
-	<style >
+	<style>
 
 	 	.itemContainer{
 			width:100%;
@@ -73,8 +47,7 @@
 	</p>
 
 
-	<ul>
-		<li class="simpleCart_shelfItem">
+		<div class="simpleCart_shelfItem">
 			<h2 class="item_name">Zebra</h2>
 			<img class="item_thumb" src="e.png" />
 			<span class="item_price">$187.95</span>
@@ -91,10 +64,10 @@
 			<input type="hidden" class="item_shipping" value="20" />	
 			<input type="text" class="item_quantity" value="1" />
 			<input type="button" class="item_add" value="add to cart" />
-		</li>
+		</div>
 
 
-		<li class="simpleCart_shelfItem">
+		<div class="simpleCart_shelfItem">
 			<h2 class="item_name">Cow</h2>
 			<img class="item_thumb" src="e.png" />
 			<span class="item_price">$18.00</span>
@@ -105,23 +78,22 @@
 			</select>		
 			<input type="text" class="item_quantity" value="1" />
 			<input type="button" class="item_add" value="add to cart" />
-		</li>
+		</div>
 
 
 
-		<li>
+		<div>
 			<h2>Baby Lion</h2>
 			<div>$34.95</div>
 			<a href="javascript:;" onclick="simpleCart.add({name:'baby lion', price: 34.95,size:'tiny',thumb:'e.png'});" >add to cart</a>
-		</li>
+		</div>
 		
-		<li>
+		<div>
 			<h2>sc Demo Baby Lion</h2>
 			<div>$34.95</div>
 			<a href="javascript:;" onclick="sc_demo.add({name:'baby lion', price: 34.95,size:'tiny',thumb:'e.png'});" >add to cart</a>
-		</li>
+		</div>
 
-	</ul>
 
 	<div class="simpleCart_items" >
 	</div>
