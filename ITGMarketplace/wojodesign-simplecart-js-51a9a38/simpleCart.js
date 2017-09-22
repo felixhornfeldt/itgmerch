@@ -88,13 +88,14 @@
 				// default options
 				settings = {
 					checkout				: { type: "PayPal", email: "you@yours.com" },
-					currency				: "USD",
+					currency				: "SEK",
 					language				: "english-us",
 
 					cartStyle				: "div",
 					cartColumns			: [
 						{ attr: "name", label: "Name" },
 						{ attr: "price", label: "Price", view: 'currency' },
+						{ attr: "size", label: "Size"},
 						{ view: "decrement", label: false },
 						{ attr: "quantity", label: "Qty" },
 						{ view: "increment", label: false },
