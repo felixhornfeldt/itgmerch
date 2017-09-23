@@ -98,7 +98,7 @@ i.fa-cart-plus {
 }
 
 i.fa-cart-plus:hover {
-    background: linear-gradient(#1E90FF, #FF1491, #FF8C00);
+    background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
 }
 
 
@@ -338,7 +338,7 @@ footer p {
 }
 
 .information-merch-produkt-content {
-    align-items: flex-start;;
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -426,9 +426,84 @@ i.fa-cart-arrow-down:hover {
     color: #000;
 }
 
+.simpleCart_items table{
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    flex: wrap;
+}
+
+.simpleCart_items table thead th {
+    font-size: 40px;
+}
+
+.simpleCart_items table thead th {
+    border-bottom: 2px solid #000;
+}
+
+.final_total_p {
+    position: absolute;
+    right: 30%;
+    color: #000;
+}
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/* About CSS */
+
+#about_main_div {
+    padding: 25px;
+}
+
+.about_div_content {
+    align-items: flex-start;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.about_img_plus {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.about_img_plus h2 {
+    color: #000;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 20px;
+}
+
+.about_img_plus img {
+    border: 2px solid #FF1493;
+}
+
+.about_text {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.about_text h1, .about_text h2, .about_text h3, .about_text h4, .about_text h5, .about_text p {
+    color: #000;
+}
+
+.about_text h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.about_text_content {
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Media CSS */
 

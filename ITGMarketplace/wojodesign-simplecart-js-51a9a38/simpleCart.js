@@ -93,14 +93,14 @@
 
 					cartStyle				: "table",
 					cartColumns			: [
-						{ attr: "name", label: "Name" },
-						{ attr: "price", label: "Price", view: 'currency' },
-						{ attr: "size", label: "Size"},
+						{ attr: "name", label: "Produkt" },
+						{ attr: "price", label: "Pris", view: 'currency' },
+						{ attr: "size", label: "Storlek"},
 						{ view: "decrement", label: false },
-						{ attr: "quantity", label: "Qty" },
+						{ attr: "quantity", label: "Antal" },
 						{ view: "increment", label: false },
-						{ attr: "total", label: "SubTotal", view: 'currency' },
-						{ view: "remove", text: "Remove", label: false }
+						{ attr: "total", label: "Total", view: 'currency' },
+						{ view: "remove", text: "Ta bort", label: false }
 					],
 
 					excludeFromCheckout	: ['thumb'],
