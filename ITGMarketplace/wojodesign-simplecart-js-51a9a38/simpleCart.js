@@ -93,12 +93,11 @@
 
 					cartStyle				: "table",
 					cartColumns			: [
+						{ attr: "thumb", view: "image"},
 						{ attr: "name", label: "Produkt" },
 						{ attr: "price", label: "Pris", view: 'currency' },
 						{ attr: "size", label: "Storlek"},
-						{ view: "decrement", label: false },
-						{ attr: "quantity", label: "Antal" },
-						{ view: "increment", label: false },
+						{ attr: "quantity", label: "Antal", view: "input"},
 						{ attr: "total", label: "Total", view: 'currency' },
 						{ view: "remove", text: "Ta bort", label: false }
 					],

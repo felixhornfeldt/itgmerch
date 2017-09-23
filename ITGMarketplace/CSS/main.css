@@ -439,10 +439,12 @@ i.fa-cart-arrow-down:hover {
 
 .simpleCart_items table thead th {
     font-size: 40px;
+    border-bottom: 2px solid #000;
 }
 
-.simpleCart_items table thead th {
-    border-bottom: 2px solid #000;
+.simpleCart_items table img {
+    width: 100px;
+    height: auto;
 }
 
 .final_total_p {
