@@ -422,74 +422,9 @@ i.fa-cart-arrow-down:hover {
 /* Shopping-Cart CSS */
 
 
-/*table {
-    border: 1px solid #000;
-}
-
-thead tr {
-    border-bottom: 2px solid #000 !important;
-}
-
-thead tr th{
-    border-right: 2px solid #000;
-    font-size: 25px;
-    min-width: 150px;
-}
-
-tbody tr td{
-    border: 1px solid #000;
-}
-
-.h2-shop-head h2 {
+.item_name {
     color: #000;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 0;
 }
-
-.shopping-cart-head {
-    border-bottom: 2px solid #000;
-    margin-bottom: 25px;
-}
-
-.shopping-cart-info-p p{
-    color: #000;
-    text-align: center;
-    justify-content: center;
-    padding-left: 500px;
-    padding-right: 500px;
-    margin-bottom: 1.5rem;
-}
-
-tbody tr td img {
-    width: 150px;
-    height: 150px;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-i.fa-close {
-    color: red;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 40px;
-    width: 150px;
-}
-
-i.fa-close:hover {
-    opacity: 0.6;
-    cursor: pointer;
-}
-
-tbody tr td p {
-    color: #000;
-    text-align: center;
-}*/
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

@@ -18,3 +18,4 @@ Selling merch for IT-Gymnasiet Göteborg.
 + Lär dig förstå client-server achitecture
 + Get product images
 + Få igång JS Script
++ About sida
