@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, p {
     color: #fff;
 }
 
+.hide {
+    display: none;
+}
+
 i.fa {
     font-size: 2rem;
     background-color: rgba(255, 255, 255, 0.095);
