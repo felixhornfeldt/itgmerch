@@ -17,3 +17,4 @@ Selling merch for IT-Gymnasiet Göteborg.
 + Get product images
 + Få igång JS Script
 + About sida
++ Learn GET/POST
