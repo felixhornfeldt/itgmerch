@@ -27,6 +27,10 @@
             <!-- Icon library FB TW IG etc. -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
              
+            <!-- JS Code -->
+            <script src="wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js"></script>
+            <script src="wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
+
         </head>
         <body>
             <header>
@@ -55,36 +59,49 @@
             <div class="f1f1f1-color-div"></div>
             
             
+            <!--<div class="simpleCart_shelfItem">
+                <h2 class="item_name">ITG T-Shirt</h2>
+                <img class="item_thumb" src="https://www.stadium.se/INTERSHOP/static/WFS/Stadium-SwedenB2C-Site/-/Stadium/sv_SE/Large2x2/232444_101_SOC_M%20TECH%20TEE.png" width="150px" height="150px" />
+                <span class="item_price">SEK 80.00</span>
+                <select class="item_size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>	
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>		
+                <input type="text" class="item_quantity" value="1">
+                <a class="item_add" href="javascript:;">Add</a>
+            </div>-->
             
             <div id="inforamtion-container-fluid-merch">
                 <div id="information-about-merch">
-                    <div class="information-merch-produkt-content">
+                    <div class="simpleCart_shelfItem">
                         <div class="info-img">
-                            <img src="https://www.stadium.se/INTERSHOP/static/WFS/Stadium-SwedenB2C-Site/-/Stadium/sv_SE/Large2x2/232444_101_SOC_M%20TECH%20TEE.png" />
+                            <img class="item_thumb" src="https://www.stadium.se/INTERSHOP/static/WFS/Stadium-SwedenB2C-Site/-/Stadium/sv_SE/Large2x2/232444_101_SOC_M%20TECH%20TEE.png" />
                         </div>
                         <div class="info-txt">
-                            <h2><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> T-shirt</h2>
+                            <h2 class="item_name"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> T-shirt</h2>
                                 <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.</p>
-                        <div id="price-info">
-                            <p>Pris: 80kr.</p>
-                        </div>
-                        <div class="size">
-                            <p>Storlek:</p>
-                            <select>
-                                <option>XS</option>
-                                <option>S</option>
-                                <option>M</option>
-                                <option>L</option>
-                                <option>XL</option>
-                                <option>XXL</option>
-                            </select>
-                        </div>    
-                        <div class="buy-button">
-                            <a href="shopping-cart.html">
-                                <i class="fa fa-cart-arrow-down">
-                                </i>
-                            </a>
-                        </div>
+                            <div class="info_price">
+                                <p class="item_price">Pris: SEK 80.00</p>
+                            </div>
+                            <div class="size">
+                                <p>Storlek:</p>
+                                <select class="item_size">
+                                    <option value="X-Small">XS</option>
+                                    <option value="Small">S</option>
+                                    <option value="Medium">M</option>
+                                    <option value="Large">L</option>
+                                    <option value="X-Large">XL</option>
+                                </select>
+                            </div>    
+                            <div class="buy-button">
+                                <a href="shopping-cart.html">
+                                    <i class="fa fa-cart-arrow-down item_add">
+                                    </i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

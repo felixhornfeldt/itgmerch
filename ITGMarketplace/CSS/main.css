@@ -341,7 +341,7 @@ footer p {
     padding: 25px;
 }
 
-.information-merch-produkt-content {
+.simpleCart_shelfItem {
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap; 
@@ -353,8 +353,6 @@ footer p {
     height: 700px;
     position: relative;
     margin-right: 25px;
-    /*border: 2px solid #000;
-    box-shadow: 4px 4px #f1f1f1;*/
 }
 
 .info-txt {
@@ -414,7 +412,7 @@ i.fa-cart-arrow-down:hover {
     margin-bottom: 1.5rem;
 }
 
-#price-info p {
+.info_price p {
     font-weight: bold;
     font-size: 30px;
 }
@@ -426,12 +424,8 @@ i.fa-cart-arrow-down:hover {
 /* Shopping-Cart CSS */
 
 
-.item_name {
-    color: #000;
-}
-
 .simpleCart_items table{
-    width: 70%;
+    width: 100%;
     text-align: center;
     justify-content: center;
     flex: wrap;
@@ -448,8 +442,6 @@ i.fa-cart-arrow-down:hover {
 }
 
 .final_total_p {
-    position: absolute;
-    right: 30%;
     color: #000;
 }
 
