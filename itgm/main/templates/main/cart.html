@@ -65,7 +65,10 @@
                             <div class="top-shopping-cart-html">
                                 <div class="top-shopping-cart-txt">
                                     <div class="kundvagn-txt-h2">
-                                        <a href="/order/">Beställ</a>
+                                        <form action="/order/" method="post">
+                                            {% csrf_token %}
+                                            <input type="submit" />
+                                        </form>
                                         </div>
                                     </div>
                                 </div>
