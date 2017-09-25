@@ -167,6 +167,7 @@ i.fa-cart-plus:hover {
     margin-top: 25px;
     /*justify-content: center;*/
     border-top: 2px solid rgba(255, 255, 255, 0.095);
+    background-color: #fff;
 }
 
 .merch img {
@@ -191,7 +192,8 @@ i.fa-cart-plus:hover {
     margin-top: 25px;
     padding: 0;
     border: 0;
-    font-weight: 100;
+    font-weight: 400;
+    color: #000;
 }
 
 
@@ -349,8 +351,8 @@ footer p {
 }
 
 .info-img img {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     position: relative;
     margin-right: 25px;
 }

@@ -96,6 +96,7 @@
 						{ attr: "thumb", view: "image"},
 						{ attr: "name", label: "Produkt" },
 						{ attr: "price", label: "Pris", view: 'currency' },
+						{ attr: "gender", label: "Kön"},
 						{ attr: "size", label: "Storlek"},
 						{ attr: "quantity", label: "Antal", view: "input"},
 						{ attr: "total", label: "Total", view: 'currency' },
