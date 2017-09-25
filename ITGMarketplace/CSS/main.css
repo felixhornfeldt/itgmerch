@@ -165,7 +165,7 @@ i.fa-cart-plus:hover {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
-    justify-content: center;
+    /*justify-content: center;*/
     border-top: 2px solid rgba(255, 255, 255, 0.095);
 }
 
@@ -424,22 +424,8 @@ i.fa-cart-arrow-down:hover {
 /* Shopping-Cart CSS */
 
 
-<<<<<<< HEAD
-.shopping_cart_main_div {
-    padding: 25px;
-    min-height: 500px;
-}
-
-.item_name {
-    color: #000;
-}
-
-.simpleCart_items table {
-    width: 70%;
-=======
 .simpleCart_items table{
     width: 100%;
->>>>>>> 9af60498a764a17f23176507fb251da1b21a36a6
     text-align: center;
     justify-content: center;
     flex: wrap;

@@ -1,6 +1,6 @@
 ### TEXT
 
-### Data fodral size'
+### Datorfodral size'
 
     Behöver inte två olika produkter för datorfodral, endast datorfodral produkt där man sedan får välja size. 
     
