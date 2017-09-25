@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, p {
     color: #fff;
 }
 
+.hide {
+    display: none;
+}
+
 i.fa {
     font-size: 2rem;
     background-color: rgba(255, 255, 255, 0.095);
@@ -98,7 +102,7 @@ i.fa-cart-plus {
 }
 
 i.fa-cart-plus:hover {
-    background: linear-gradient(#1E90FF, #FF1491, #FF8C00);
+    background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
 }
 
 
@@ -141,7 +145,7 @@ i.fa-cart-plus:hover {
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap; 
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .first-img-middle-plac {
@@ -161,8 +165,9 @@ i.fa-cart-plus:hover {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
-    justify-content: center;
+    /*justify-content: center;*/
     border-top: 2px solid rgba(255, 255, 255, 0.095);
+    background-color: #fff;
 }
 
 .merch img {
@@ -187,7 +192,8 @@ i.fa-cart-plus:hover {
     margin-top: 25px;
     padding: 0;
     border: 0;
-    font-weight: 100;
+    font-weight: 400;
+    color: #000;
 }
 
 
@@ -297,6 +303,35 @@ footer p {
     height: auto;
 }
 
+.developer_ {
+    justify-content: center;
+    text-align: center;
+}
+
+.developer_ img {
+    width: 150px;
+    height: auto;
+}
+
+.devolper_ h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.developer_ p {
+    font-size: 20px;
+}
+
+.inside_developer {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+
+.inside_developer .emil_ {
+    margin-right: 10px;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -308,20 +343,18 @@ footer p {
     padding: 25px;
 }
 
-.information-merch-produkt-content {
-    align-items: flex-start;;
+.simpleCart_shelfItem {
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
 }
 
 .info-img img {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     position: relative;
     margin-right: 25px;
-    /*border: 2px solid #000;
-    box-shadow: 4px 4px #f1f1f1;*/
 }
 
 .info-txt {
@@ -381,7 +414,7 @@ i.fa-cart-arrow-down:hover {
     margin-bottom: 1.5rem;
 }
 
-#price-info p {
+.info_price p {
     font-weight: bold;
     font-size: 30px;
 }
@@ -393,78 +426,88 @@ i.fa-cart-arrow-down:hover {
 /* Shopping-Cart CSS */
 
 
-/*table {
-    border: 1px solid #000;
-}
-
-thead tr {
-    border-bottom: 2px solid #000 !important;
-}
-
-thead tr th{
-    border-right: 2px solid #000;
-    font-size: 25px;
-    min-width: 150px;
-}
-
-tbody tr td{
-    border: 1px solid #000;
-}
-
-.h2-shop-head h2 {
-    color: #000;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
+.simpleCart_items table{
+    width: 100%;
     text-align: center;
     justify-content: center;
-    margin-bottom: 0;
+    flex: wrap;
 }
 
-.shopping-cart-head {
-    border-bottom: 2px solid #000;
-    margin-bottom: 25px;
-}
-
-.shopping-cart-info-p p{
-    color: #000;
-    text-align: center;
-    justify-content: center;
-    padding-left: 500px;
-    padding-right: 500px;
-    margin-bottom: 1.5rem;
-}
-
-tbody tr td img {
-    width: 150px;
-    height: 150px;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-i.fa-close {
-    color: red;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    border: 0;
+.simpleCart_items table thead th {
     font-size: 40px;
-    width: 150px;
+    border-bottom: 2px solid #000;
 }
 
-i.fa-close:hover {
-    opacity: 0.6;
-    cursor: pointer;
+.simpleCart_items table tbody td {
+    padding-top: 10px;
+}    
+
+.simpleCart_items table img {
+    width: 100px;
+    height: auto;
 }
 
-tbody tr td p {
+.final_total_p {
     color: #000;
-    text-align: center;
-}*/
+}
 
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/* About CSS */
+
+#about_main_div {
+    padding: 25px;
+}
+
+.about_div_content {
+    align-items: flex-start;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.about_img_plus {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.about_img_plus h2 {
+    color: #000;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 20px;
+}
+
+.about_img_plus img {
+    border: 2px solid #FF1493;
+}
+
+.about_text {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.about_text h1, .about_text h2, .about_text h3, .about_text h4, .about_text h5, .about_text p {
+    color: #000;
+}
+
+.about_text h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.about_text_content {
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Media CSS */
 

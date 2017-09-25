@@ -88,18 +88,18 @@
 				// default options
 				settings = {
 					checkout				: { type: "PayPal", email: "you@yours.com" },
-					currency				: "USD",
+					currency				: "SEK",
 					language				: "english-us",
 
-					cartStyle				: "div",
+					cartStyle				: "table",
 					cartColumns			: [
-						{ attr: "name", label: "Name" },
-						{ attr: "price", label: "Price", view: 'currency' },
-						{ view: "decrement", label: false },
-						{ attr: "quantity", label: "Qty" },
-						{ view: "increment", label: false },
-						{ attr: "total", label: "SubTotal", view: 'currency' },
-						{ view: "remove", text: "Remove", label: false }
+						{ attr: "thumb", view: "image"},
+						{ attr: "name", label: "Produkt" },
+						{ attr: "price", label: "Pris", view: 'currency' },
+						{ attr: "size", label: "Storlek"},
+						{ attr: "quantity", label: "Antal", view: "input"},
+						{ attr: "total", label: "Total", view: 'currency' },
+						{ view: "remove", text: "Ta bort", label: false }
 					],
 
 					excludeFromCheckout	: ['thumb'],
