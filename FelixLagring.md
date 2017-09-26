@@ -70,4 +70,8 @@
             
             <!-- Icon library FB TW IG etc. -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+            <!-- JS Code -->
+            <script src="wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js"></script>
+            <script src="wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
              

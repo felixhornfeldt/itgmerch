@@ -167,7 +167,7 @@ i.fa-cart-plus:hover {
     margin-top: 25px;
     /*justify-content: center;*/
     border-top: 2px solid rgba(255, 255, 255, 0.095);
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 
 .merch img {
@@ -192,8 +192,8 @@ i.fa-cart-plus:hover {
     margin-top: 25px;
     padding: 0;
     border: 0;
-    font-weight: 400;
-    color: #000;
+    font-weight: 100;
+    /*color: #000;*/
 }
 
 
