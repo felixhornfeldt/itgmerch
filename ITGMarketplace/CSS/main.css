@@ -427,7 +427,7 @@ i.fa-cart-arrow-down:hover {
 
 
 .simpleCart_items table{
-    width: 100%;
+    width: 70%;
     text-align: center;
     justify-content: center;
     flex: wrap;
@@ -449,6 +449,10 @@ i.fa-cart-arrow-down:hover {
 
 .final_total_p {
     color: #000;
+    text-align: right;
+}
+
+.checkout_p {
     text-align: right;
 }
 

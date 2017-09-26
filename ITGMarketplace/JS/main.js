@@ -1,7 +1,7 @@
 simpleCart({
     checkout: { 
         type: "SendForm" , 
-        url: "http://example.com/your/custom/checkout/url" ,
+        url: "/order/" ,
         // http method for form, "POST" or "GET", default is "POST"
         method: "POST" , 
         // url to return to on successful checkout, default is null
