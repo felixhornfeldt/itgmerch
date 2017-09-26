@@ -180,7 +180,7 @@ i.fa-cart-plus:hover {
 
 .merch img:hover {
     cursor: pointer;
-    background:  linear-gradient(#1E90FF, #FF1493, #FF8C00);
+    background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
     border-radius: 20%;
 }
 
@@ -425,6 +425,13 @@ i.fa-cart-arrow-down:hover {
 
 /* Shopping-Cart CSS */
 
+.shopping_cart_main {
+    min-height: 300px;
+}
+
+.shopping_cart_content_shelf_checkout {
+    width: 100%;
+}
 
 .simpleCart_items table{
     width: 70%;
@@ -447,13 +454,24 @@ i.fa-cart-arrow-down:hover {
     height: auto;
 }
 
-.final_total_p {
-    color: #000;
-    text-align: right;
+.checkout {
+    width: 200px;
+    background-color: #f1f1f1;
+    height: 200px;
+    border: 1px solid #000;
+    padding: 25px;
 }
 
-.checkout_p {
-    text-align: right;
+.final_total_p {
+    color: #000;
+}
+
+.checkout_button {
+    color: #fff;
+    justify-content: center;
+    width: 100%;
+    background-color: #808080;
+    font-size: 25px;
 }
 
 
