@@ -74,4 +74,5 @@
             <!-- JS Code -->
             <script src="wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js"></script>
             <script src="wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
+            <script src="JS/main.js"></script>
              

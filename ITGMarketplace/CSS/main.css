@@ -438,6 +438,17 @@ i.fa-cart-arrow-down:hover {
     padding-top: 10px;
 }    
 
+.simpleCart_items table tbody td a {
+    text-decoration: none;
+    color: #000;
+}
+
+.simpleCart_items table tbody td a:hover {
+    background-color: #FF0000;
+    padding: 5px;
+    color: #fff;
+}
+
 .simpleCart_items table img {
     width: 100px;
     height: auto;
