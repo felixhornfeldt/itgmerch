@@ -462,6 +462,10 @@ i.fa-cart-arrow-down:hover {
     min-height: 45px;
 }
 
+.shopping_cart_buttons button:hover {
+    opacity: 0.7;
+}
+
 .checkout_button, .kepp_shopping_button, .empty_shopping_cart {
     color: #fff;
     width: auto;
