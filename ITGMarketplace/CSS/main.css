@@ -427,6 +427,8 @@ i.fa-cart-arrow-down:hover {
 
 .shopping_cart_main {
     min-height: 300px;
+    padding: 10px;
+    background-color: #fff;
 }
 
 .shopping_cart_content_shelf_checkout {
@@ -434,7 +436,7 @@ i.fa-cart-arrow-down:hover {
 }
 
 .simpleCart_items table{
-    width: 70%;
+    width: 100%;
     text-align: center;
     justify-content: center;
     flex: wrap;
@@ -454,24 +456,42 @@ i.fa-cart-arrow-down:hover {
     height: auto;
 }
 
-.checkout {
-    width: 200px;
-    background-color: #f1f1f1;
-    height: 200px;
-    border: 1px solid #000;
-    padding: 25px;
-}
-
 .final_total_p {
     color: #000;
+    text-align: right;
+    border-bottom: 1px solid #b6b6b6;
+    border-top: 1px solid #B6B6B6;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.final_total_p span {
+    font-weight: normal;
+}
+
+.shopping_cart_buttons {
+    min-height: 45px;
+}
+
+.checkout_button, .kepp_shopping_button {
+    color: #fff;
+    width: auto;
+    background-color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 25px;
+    margin: 0;
+    vertical-align: middle;
 }
 
 .checkout_button {
-    color: #fff;
-    justify-content: center;
-    width: 100%;
-    background-color: #808080;
-    font-size: 25px;
+    float: right;
+}
+
+.kepp_shopping_button {
+    float: left;
 }
 
 
