@@ -445,8 +445,13 @@ i.fa-cart-arrow-down:hover {
 
 .simpleCart_items table tbody td a:hover {
     background-color: #FF0000;
-    padding: 5px;
+    padding: 5px 10px;
     color: #fff;
+}
+
+.simpleCart_items table tbody td input {
+    width: 25%;
+    text-align: center;
 }
 
 .simpleCart_items table img {
@@ -606,7 +611,7 @@ i.fa-cart-arrow-down:hover {
     }
     
     .info-txt h2 {
-        font-size: 69px;
+        font-size: 49px;
     }
     
     i.fa-cart-arrow-down {
