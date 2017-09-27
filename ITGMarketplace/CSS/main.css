@@ -475,23 +475,29 @@ i.fa-cart-arrow-down:hover {
     min-height: 45px;
 }
 
-.checkout_button, .kepp_shopping_button {
+.checkout_button, .kepp_shopping_button, .empty_shopping_cart {
     color: #fff;
     width: auto;
     background-color: #000;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 18px;
     padding: 5px 25px;
     margin: 0;
-    vertical-align: middle;
-}
-
-.checkout_button {
-    float: right;
+    text-transform: uppercase;
 }
 
 .kepp_shopping_button {
     float: left;
+    border: 2px solid #1E90FF;
+}
+
+.empty_shopping_cart {
+    border: 2px solid #FF1493;
+    margin-left: 10px;
+}
+
+.checkout_button {
+    float: right;
+    border: 2px solid #FF8C00;
 }
 
 
