@@ -48,18 +48,6 @@ i.fa {
     color: #fff;
 }
 
-/*#hover-dodgerblue img:hover {
-    background-color: dodgerblue;
-}
-
-#hover-deeppink img:hover {
-    background-color: deeppink;
-}
-
-#hover-darkorange img:hover {
-    background-color: darkorange;
-}*/
-
 
 /* Header CSS */
 
@@ -125,7 +113,6 @@ i.fa-cart-plus:hover {
     height: 229px;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
     max-width: 100%;
 }
 
@@ -483,6 +470,7 @@ i.fa-cart-arrow-down:hover {
     padding: 5px 25px;
     margin: 0;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .kepp_shopping_button {
