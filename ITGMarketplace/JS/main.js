@@ -1,4 +1,4 @@
-simpleCart({
+/*simpleCart({
     checkout: { 
         type: "SendForm" , 
         url: "/order/" ,
@@ -14,5 +14,12 @@ simpleCart({
           storename: "Bob's cool plumbing store",
           cartid: "12321321"
         }
+    } 
+});*/
+
+simpleCart({
+    checkout: { 
+        type: "PayPal" , 
+        email: "felix.hornfeldt@outlook.com" 
     } 
 });
