@@ -65,9 +65,6 @@
             <link rel="apple-touch-icon-precomposed" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-180x180.png" />
             <meta name="msapplication-TileImage" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-270x270.png" />
             
-            <!-- ? -->
-            <link rel="stylesheet" id="coToolbarStyle" type="text/css" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" />
-            
             <!-- Icon library FB TW IG etc. -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 

@@ -97,7 +97,7 @@
 						{ attr: "name", label: "Produkt" },
 						{ attr: "price", label: "Pris", view: 'currency' },
 						{ attr: "size", label: "Storlek"},
-						{ attr: "quantity", label: "Antal", view: "input"},
+						{ attr: "quantity", label: "Antal", view: "input" },
 						{ attr: "total", label: "Total", view: 'currency' },
 						{ view: "remove", text: "Ta bort", label: false }
 					],

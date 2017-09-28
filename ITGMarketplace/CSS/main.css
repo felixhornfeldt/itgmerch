@@ -300,10 +300,19 @@ footer p {
     height: auto;
 }
 
-.devolper_ h2 {
+.developer_ h2 {
     font-weight: 700;
     font-style: italic;
     font-size: 40px;
+    color: #fff;
+}
+
+.developer_ h2 a {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .developer_ p {
