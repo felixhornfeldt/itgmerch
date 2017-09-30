@@ -71,13 +71,13 @@ i.fa {
     justify-content: center;
 }
 
-.img-bar-top-href {
+.img-bar-top-href img {
     position: absolute;
     left: 15px;
     top: 0;
     z-index: 99;
-    max-width: 131px;
-    max-height: 131px;
+    width: 131px;
+    height: 131px;
 }
 
 .img-bar-top-href:hover {
