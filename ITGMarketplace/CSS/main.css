@@ -179,7 +179,7 @@ i.fa-cart-plus:hover {
     opacity: 0.7;
 }
 
-.shopping_cart_mini button a {
+.shopping_cart_mini a button {
     text-decoration: none;
     color: #fff;
     font-size: 24px;
