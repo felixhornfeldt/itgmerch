@@ -23,3 +23,11 @@ simpleCart({
         email: "felix.hornfeldt@outlook.com" 
     } 
 });
+
+function showDiv() {
+    document.getElementById('show').style.display = "block";
+}
+
+function removeDiv() {
+    document.getElementById('show').style.display = "none";
+}

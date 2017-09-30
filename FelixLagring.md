@@ -63,13 +63,45 @@
             <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-32x32.png" sizes="32x32" />
             <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-192x192.png" sizes="192x192" />
             <link rel="apple-touch-icon-precomposed" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-180x180.png" />
-            <meta name="msapplication-TileImage" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-270x270.png" />
             
             <!-- Icon library FB TW IG etc. -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+            
             <!-- JS Code -->
             <script src="wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js"></script>
             <script src="wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
             <script src="JS/main.js"></script>
+
+### Simple header code
+
+            <header>
+                <div id="header">
+                    <div id="top-header-div">
+                        <div id="headline-img-txt">
+                            <div id="headline" class="headline">
+                                <div class="headline-img">
+                                    <a class="img-bar-top-href" href="index.html">
+                                        <img src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit.png" alt srcset="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit@2x.png 200w" width="131px" height="131px" class="img-head-top-bar" />
+                                    </a>    
+                                </div>
+                                <div class="headline-text">
+                                    <h1><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> <a class="white">M</a>arketplace</h1>
+                                </div>
+                                <div class="cart-button">
+                                    <!--<a href="shopping-cart.html">--><a onclick="showDiv()">
+                                        <i class="fa fa-cart-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="shopping_cart_mini hide" id="show">
+                <a onclick="removeDiv()" class="remove_div_mini">X</a>
+                <h1>Kundvagn</h1>
+                <div class="simpleCart_items"></div>
+                <p class="grand_total_p">Grand Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></p>
+                <button class="shopping_cart_mini_button"><a href="shopping-cart.html">Till Kundvagn</a></button>
+            </div>
              

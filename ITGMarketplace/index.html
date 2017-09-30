@@ -23,6 +23,11 @@
             <!-- Icon library FB TW IG etc. -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
              
+            <!-- JS Code -->
+            <script src="wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js"></script>
+            <script src="wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
+            <script src="JS/main.js"></script>
+            
         </head>
         <body>
             <header>
@@ -39,7 +44,7 @@
                                     <h1><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> <a class="white">M</a>arketplace</h1>
                                 </div>
                                 <div class="cart-button">
-                                    <a href="shopping-cart.html">
+                                    <!--<a href="shopping-cart.html">--><a onclick="showDiv()">
                                         <i class="fa fa-cart-plus"></i>
                                     </a>
                                 </div>
@@ -48,6 +53,13 @@
                     </div>
                 </div>
             </header>
+            <div class="shopping_cart_mini hide" id="show">
+                <a onclick="removeDiv()" class="remove_div_mini">X</a>
+                <h1>Kundvagn</h1>
+                <div class="simpleCart_items"></div>
+                <p class="grand_total_p">Grand Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></p>
+                <button class="shopping_cart_mini_button"><a href="shopping-cart.html">Till Kundvagn</a></button>
+            </div>
             <div class="f1f1f1-color-div" ></div>
             <main>
                 <div id="middle-main-out-plac">
@@ -55,21 +67,16 @@
                         <div id="middle-plac-page-plus-info-img">
                             <div class="middle-img-plac-txt">
                                 <img src="http://it-gymnasiet.se/wp-content/uploads/2017/03/ITG-weloveit-transparent-800x745-300x279.png"  alt srcset="http://it-gymnasiet.se/wp-content/uploads/2017/03/ITG-weloveit-transparent-800x745-300x279.png 300w, http://it-gymnasiet.se/wp-content/uploads/2017/03/ITG-weloveit-transparent-800x745-768x715.png 768w, http://it-gymnasiet.se/wp-content/uploads/2017/03/ITG-weloveit-transparent-800x745.png 800w" width="300px" height="279px" class="first-img-middle-plac"/>
-                                <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
+                                <h3>Välkommen till ITG Marketplace! Den bästa skolshopen i hela Sverige. Produkterna är specifika för IT-Gymnasiet och erbjuds just nu endast för elever och personal på ITG-Göteborg. Gamla elever som vill köpa ITG-Merch kan kontakta oss vi mejl.</h3>
                                 <div class="blue-txt-plac">
-                                    <h3>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.</h3>
+                                    <h3>Alla dina beställningar görs via hemsidan. Du kan endast beställa om du har ett your_name@itggot.se konto. Du kommer få fylla i lite uppgifter som konfirmerar att du faktiskt går på ITG-Göteborg.</h3>
                                 </div>
                                 <div class="pink-txt-plac">
-                                    <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h3>
+                                    <h3>Alla ordrar hämtas ut i elevcafét. Du får ett mejl om vad du har beställt och när du kan hämta ut det. Det tar vanligtvis 3 arbetsdagar från att ordern har lagts till att du kan hämta ut den.</h3>
                                 </div>
                                 <div class="orange-txt-plac">
-                                    <h3>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz.</h3>
+                                    <h3>Var vänlig och beställ inte mer än 3 av varje proudukt som du ska ha och gärna i en och samma storlek. Ordrar med över tre av varje produkt kommer inte godtjänas och du kommer behöva beställa igen.</h3>
                                 </div>
-                                <!--<div class="img-elevkar-itg">
-                                    <a href="https://ebas.gymnasiet.sverigeselevkarer.se/signups/index/576">
-                                        <img src="https://ebas.gymnasiet.sverigeselevkarer.se/association_logos/get_logo/F110232-6/600/440/true" width="300px" height="279px"/>
-                                    </a>
-                                </div>-->
                             </div>
                             <div id="the-merch-container-field">
                                 <div class="merch-container">
