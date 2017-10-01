@@ -408,6 +408,11 @@ footer p {
     text-decoration: none;
 }
 
+.developer_ h2 a:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
 .developer_ p {
     font-size: 20px;
 }
