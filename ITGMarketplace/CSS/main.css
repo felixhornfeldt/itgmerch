@@ -107,6 +107,7 @@ i.fa-cart-plus:hover {
     background-color: #fff;
     padding: 5px;
     border: 3px solid #1E90FF;
+    max-width: 100%;
 }
 
 .shopping_cart_mini .remove_div_mini {
@@ -689,10 +690,6 @@ i.fa-cart-arrow-down:hover {
     .middle-img-plac-txt h3 {
         margin-top: 10px;
     }
-    
-    .img-elevkar-itg {
-        margin-top: 10px;
-    }
 } 
 
 @media screen and (max-width: 1540px) {
@@ -737,9 +734,31 @@ i.fa-cart-arrow-down:hover {
     .info-txt p {
         font-size: 18px;
     }
-    
+
     #p-show {
         font-size: 22px;
+    }
+
+    .shopping_cart_mini {
+        width: 400px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table thead th {
+        font-size: 16px;
+        width: 10%;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td,
+    .shopping_cart_mini .simpleCart_items table tbody td a {
+        font-size: 11px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td a:hover {
+        padding: 1px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td input {
+        font-size: 11px;
     }
     
 }
