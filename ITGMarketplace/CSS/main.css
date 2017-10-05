@@ -198,7 +198,7 @@ i.fa-cart-plus:hover {
     padding: 25px;
 }
 
-.middle-img-plac-txt h3 {
+.middle-img-plac-txt p {
     width: 250px;
     padding: 25px;
     text-align: left;
@@ -210,15 +210,15 @@ i.fa-cart-plus:hover {
     font-size: 18px;
 }
 
-.blue-txt-plac h3 {
+.blue-txt-plac p {
     background-color: #1E90FF;
 }
 
-.pink-txt-plac h3 {
+.pink-txt-plac p {
     background-color: #FF1493;
 }
 
-.orange-txt-plac h3 {
+.orange-txt-plac p {
     background-color: #FF8C00;
 }
 
@@ -246,7 +246,7 @@ i.fa-cart-plus:hover {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
-    /*justify-content: center;*/
+    justify-content: center;
     border-top: 2px solid rgba(255, 255, 255, 0.095);
     /*background-color: #fff;*/
 }
@@ -687,13 +687,13 @@ i.fa-cart-arrow-down:hover {
 
 
 @media screen and (max-width: 1850px) {
-    .middle-img-plac-txt h3 {
+    .middle-img-plac-txt p {
         margin-top: 10px;
     }
 } 
 
 @media screen and (max-width: 1540px) {
-    .middle-img-plac-txt h3 {
+    .middle-img-plac-txt p {
         width: 210px;
         height: 150px;
         font-size: 13px;
@@ -822,7 +822,7 @@ i.fa-cart-arrow-down:hover {
         height: auto;
     }
     
-    .middle-img-plac-txt h3 {
+    .middle-img-plac-txt p {
         width: 150px;
         height: auto;
         font-size:11px;
