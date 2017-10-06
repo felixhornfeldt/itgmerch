@@ -1,9 +1,8 @@
 <!Doctype html>
-    <html>
+    <html lang="sv">
         <head>
-            
             <!--Fonts-->
-            <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" >
+            <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" />
             
             <!--CSS Stylesheets-->
             <link rel="stylesheet" type="text/css" href="CSS\main.css" />
@@ -19,14 +18,14 @@
             <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-32x32.png" sizes="32x32" />
             <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-192x192.png" sizes="192x192" />
             <link rel="apple-touch-icon-precomposed" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-180x180.png" />
-            <meta name="msapplication-TileImage" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-270x270.png" />
-            
-            <!-- ? -->
-            <link rel="stylesheet" id="coToolbarStyle" type="text/css" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" />
             
             <!-- Icon library FB TW IG etc. -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
              
+            <!-- JS Code -->
+            <script src="wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js"></script>
+            <script src="wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
+            <script src="JS/main.js"></script>
         </head>
         <body>
             <header>
@@ -36,14 +35,14 @@
                             <div id="headline" class="headline">
                                 <div class="headline-img">
                                     <a class="img-bar-top-href" href="index.html">
-                                        <img src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit.png" alt srcset="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit@2x.png 200w" width="131px" height="131px" class="img-head-top-bar" />
+                                        <img alt="back to home" title="Home" src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit.png" class="img-head-top-bar" />
                                     </a>    
                                 </div>
                                 <div class="headline-text">
                                     <h1><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> <a class="white">M</a>arketplace</h1>
                                 </div>
                                 <div class="cart-button">
-                                    <a href="shopping-cart.html">
+                                    <a onclick="showDiv()">
                                         <i class="fa fa-cart-plus"></i>
                                     </a>
                                 </div>
@@ -52,67 +51,83 @@
                     </div>
                 </div>
             </header>
+            <div class="shopping_cart_mini hide" id="show">
+                <a onclick="removeDiv()" class="remove_div_mini">X</a>
+                <h1>Kundvagn</h1>
+                <div class="simpleCart_items"></div>
+                <p class="grand_total_p">Grand Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></p>
+                <a href="shopping-cart.html"><button class="shopping_cart_mini_button">Till Kundvagn</button></a>
+            </div>
             <div class="f1f1f1-color-div" ></div>
-            <div id="middle-main-out-plac">
-                <div id="middle-plac-in">
-                    <div id="middle-plac-page-plus-info-img">
-                        <div class="middle-img-plac-txt">
-                            <img src="http://it-gymnasiet.se/wp-content/uploads/2017/03/ITG-weloveit-transparent-800x745-300x279.png"  alt srcset="http://it-gymnasiet.se/wp-content/uploads/2017/03/ITG-weloveit-transparent-800x745-300x279.png 300w, http://it-gymnasiet.se/wp-content/uploads/2017/03/ITG-weloveit-transparent-800x745-768x715.png 768w, http://it-gymnasiet.se/wp-content/uploads/2017/03/ITG-weloveit-transparent-800x745.png 800w" width="300px" height="279px" class="first-img-middle-plac"/>
-                            <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
+            <main>
+                <div id="middle-main-out-plac">
+                    <div id="middle-plac-in">
+                        <div id="middle-plac-page-plus-info-img">
+                            <div class="middle-img-plac-txt">
+                                <img alt="We Love It logo" src="http://it-gymnasiet.se/wp-content/uploads/2017/03/ITG-weloveit-transparent-800x745-300x279.png" title="We Love It" width="300px" height="279px" class="first-img-middle-plac"/>
+                                <p>Välkommen till ITG Marketplace! Den bästa skolshopen i hela Sverige. Produkterna erbjuds just nu endast för elever och personal på ITG-Göteborg. Gamla elever som vill köpa ITG-Merch kan kontakta oss vi mejl.</p>
                                 <div class="blue-txt-plac">
-                                    <h3>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.</h3>
+                                    <p>Alla dina beställningar görs via hemsidan. Du kan endast beställa om du har ett @itggot.se konto. Du kommer få fylla i lite uppgifter som konfirmerar att du faktiskt går på ITG-Göteborg.</p>
                                 </div>
                                 <div class="pink-txt-plac">
-                                    <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h3>
+                                    <p>Alla ordrar hämtas ut i elevcafét. Du får ett mejl om vad du har beställt och när du kan hämta ut det. Det tar vanligtvis 3 arbetsdagar från att ordern har lagts tills att du kan hämta ut den.</p>
                                 </div>
                                 <div class="orange-txt-plac">
-                                    <h3>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz.</h3>
+                                    <p>Var vänlig och beställ inte mer än 3 av varje proudukt som du ska ha och gärna i en och samma storlek. Ordrar med över tre av varje produkt kommer inte godtjänas och du kommer behöva beställa igen.</p>
                                 </div>
-                                <!--<div class="img-elevkar-itg">
-                                    <a href="https://ebas.gymnasiet.sverigeselevkarer.se/signups/index/576">
-                                        <img src="https://ebas.gymnasiet.sverigeselevkarer.se/association_logos/get_logo/F110232-6/600/440/true" width="300px" height="279px"/>
-                                    </a>
-                                </div>-->
-                        </div>
-                        <div id="the-merch-container-field">
-                            <div class="merch-container">
-                                <div class="merch">
-                                    <div class="t-shirt-merch" id="hover-dodgerblue">
-                                        <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> T-shirt</p>
-                                        <a href="t-shirt.html">
-                                            <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/small_image/250x/9df78eab33525d08d6e5fb8d27136e95/i/t/itg_tshirt.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="nyckelband-merch" id="hover-deeppink">
-                                        <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Zip Hoodie</p>
-                                        <a href="hoodie.html">
-                                            <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/small_image/250x/9df78eab33525d08d6e5fb8d27136e95/z/i/zip_men.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="datafodral-15_6-merch" id="hover-dodgerblue" >
-                                        <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Datorfodral</p>
-                                        <a href="datorfodral.html">
-                                            <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/small_image/250x/9df78eab33525d08d6e5fb8d27136e95/d/a/datorfodral_2_3.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="penna-merch" id="hover-deeppink">
-                                        <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Penna</p>
-                                        <a href="penna.html">
-                                            <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/small_image/250x/9df78eab33525d08d6e5fb8d27136e95/p/e/penna_shopen.jpg" />
-                                        </a>
-                                    </div>
-                                    <div class="kollegieblock-merch" id="hover-darkorange">
-                                        <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Kollegieblock</p>
-                                        <a href="block.html">
-                                            <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/small_image/250x/9df78eab33525d08d6e5fb8d27136e95/b/l/block_a5_1.jpg" />
-                                        </a>
+                            </div>
+                            <div id="the-merch-container-field">
+                                <div class="merch-container">
+                                    <div class="merch">
+                                        <div class="t-shirt-merch">
+                                            <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> T-shirt (Herr)</p>
+                                            <a href="product_template.html">
+                                                <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/image/9df78eab33525d08d6e5fb8d27136e95/i/t/itg_tshirt.jpg" title="ITG T-Shirt" />
+                                            </a>
+                                        </div>
+                                        <div class="t-shirt-merch">
+                                            <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> T-shirt (Dam)</p>
+                                            <a href="">
+                                                <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/image/9df78eab33525d08d6e5fb8d27136e95/t/s/tshirt_dam_1_.jpg" title="ITG T-Shirt" />
+                                            </a>
+                                        </div>
+                                        <div class="hoodie_herr_merch">
+                                            <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Zip Hoodie (Herr)</p>
+                                            <a href="">
+                                                <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/image/9df78eab33525d08d6e5fb8d27136e95/z/i/zip_men.jpg" title="ITG Zip Hoodie" />
+                                            </a>
+                                        </div>
+                                        <div class="hoodie_dam_merch">
+                                            <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Zip Hoodie (Dam)</p>
+                                            <a href="">
+                                                <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/image/9df78eab33525d08d6e5fb8d27136e95/z/i/zip_dam_2_1.jpg" title="ITG Zip Hoodie" />
+                                            </a>
+                                        </div>
+                                        <div class="datafodral-15_6-merch">
+                                            <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Datorfodral</p>
+                                            <a href="">
+                                                <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/image/9df78eab33525d08d6e5fb8d27136e95/d/a/datorfodral_2_3.jpg" title="ITG Datorfodral" />
+                                            </a>
+                                        </div>
+                                        <div class="penna-merch">
+                                            <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Smart Penna</p>
+                                            <a href="">
+                                                <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/image/9df78eab33525d08d6e5fb8d27136e95/p/e/penna_shopen.jpg" title="ITG Smart Penna" />
+                                            </a>
+                                        </div>
+                                        <div class="kollegieblock-merch">
+                                            <p id="p-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Kollegieblock</p>
+                                            <a href="">
+                                                <img src="http://academedia.daylightshops.se/media/catalog/product/cache/33/image/9df78eab33525d08d6e5fb8d27136e95/b/l/block_a5_1.jpg" title="ITG Kollegieblock" />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
             <div class="f1f1f1-color-div"></div>
             <footer>
                 <div id="footer-div">
@@ -120,7 +135,7 @@
                         <div class="footer-img-vertical">
                             <div class="img-vertikal-itg-href">
                                 <a href="http://it-gymnasiet.se/">
-                                    <img src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itgymnasiet_logo_horizontal.png" srcset="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itgymnasiet_logo_horizontal@2x.png 520w" width="260px" height="18px" />
+                                    <img title="it-gymnasiet.se" src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itgymnasiet_logo_horizontal.png" width="260px" height="18px" />
                                 </a>
                             </div>
                         </div>
@@ -149,17 +164,17 @@
                             <ul class="social-media">
                                 <li>
                                     <a href="https://www.instagram.com/itgymnasietgoteborg/">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="fa fa-instagram" title="instagram"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/ITgymnasiet">
-                                        <i class="fa fa-facebook"></i>
+                                        <i class="fa fa-facebook" title="facebook"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://twitter.com/ITGymnasiet">
-                                        <i class="fa fa-twitter"></i>
+                                        <i class="fa fa-twitter" title="twitter"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -168,16 +183,16 @@
                             <p>© 2017 IT-Gymnasiet Sverige.</p>
                         </div>
                         <div class="developer_">
-                            <h2><a href="about.html">About</a></h2>
+                            <h2><a href="about.html">Om</a></h2>
                             <h2>Developed by:</h2>
                             <div class="inside_developer">
                                 <div class="emil_">
-                                    <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-1/p240x240/20799441_1287027808093532_8691757969826870645_n.jpg?oh=b4cfa4aae78ad0c494b5963cefe86c81&oe=5A50AFA8">
+                                    <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-1/p240x240/20799441_1287027808093532_8691757969826870645_n.jpg?oh=b4cfa4aae78ad0c494b5963cefe86c81&oe=5A50AFA8" title="Emil Babayev" />
                                     <br>
                                     <p>Emil Babayev</p>
                                 </div>
                                 <div class="felix_">
-                                    <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-1/p240x240/21740048_1474078895975108_5526361180779581433_n.jpg?oh=ba6f50d7ab8d6f0847633684330bff38&oe=5A41C90A">
+                                    <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-1/p240x240/21740048_1474078895975108_5526361180779581433_n.jpg?oh=ba6f50d7ab8d6f0847633684330bff38&oe=5A41C90A" title="Felix Hörnfeldt" />
                                     <br>
                                     <p>Felix Hörnfeldt</p>
                                 </div>

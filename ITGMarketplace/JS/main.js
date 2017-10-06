@@ -1,4 +1,4 @@
-simpleCart({
+/*simpleCart({
     checkout: { 
         type: "SendForm" , 
         url: "/order/" ,
@@ -15,4 +15,19 @@ simpleCart({
           cartid: "12321321"
         }
     } 
+});*/
+
+simpleCart({
+    checkout: { 
+        type: "PayPal" , 
+        email: "felix.hornfeldt@outlook.com" 
+    } 
 });
+
+function showDiv() {
+    document.getElementById('show').style.display = "block";
+}
+
+function removeDiv() {
+    document.getElementById('show').style.display = "none";
+}
