@@ -76,8 +76,8 @@ i.fa {
     left: 15px;
     top: 0;
     z-index: 99;
-    width: 131px;
-    height: 131px;
+    width: 130px;
+    height: 130px;
 }
 
 .img-bar-top-href:hover {
@@ -257,12 +257,13 @@ i.fa-cart-plus:hover {
     padding: 20px;
     margin-top: 5px;
     justify-content: center;
+    border-radius: 20%;
 }
 
 .merch img:hover {
     cursor: pointer;
     background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
-    border-radius: 20%;
+    /*border-radius: 20%;*/
 }
 
 #p-show {
@@ -807,12 +808,11 @@ i.fa-cart-arrow-down:hover {
     }
     
     i.fa-cart-plus {
-        align-items: center;
+        position: absolute;
+        top: 10%;
+        left: 40%;
         font-size: 3rem;
         color: #000;
-        top: 130px; 
-        right: 100px;
-        left: 100px;
     }   
     
     i.fa-cart-plus:hover {
