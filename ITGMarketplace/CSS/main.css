@@ -428,6 +428,10 @@ footer p {
     margin-right: 10px;
 }
 
+.inside_developer .felix_ {
+    margin-left: 10px;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -799,6 +803,7 @@ i.fa-cart-arrow-down:hover {
         font-size: 40px;
         padding: 0;
         text-align: center;
+        height: auto;
     }
     
     i.fa-cart-plus {
@@ -817,6 +822,10 @@ i.fa-cart-arrow-down:hover {
 }
 
 @media screen and (max-width: 400px) {
+    .middle-img-plac-txt {
+        justify-content: center;
+    }
+
     .first-img-middle-plac {
         width: 200px;
         height: auto;
@@ -825,12 +834,7 @@ i.fa-cart-arrow-down:hover {
     .middle-img-plac-txt p {
         width: 150px;
         height: auto;
-        font-size:11px;
-    }
-    
-    .img-elevkar-itg img {
-        width: 200px;
-        height: auto;
+        font-size: 11px;
     }
     
     .img-vertikal-itg-href img {
