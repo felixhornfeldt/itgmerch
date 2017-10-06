@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.shortcuts import HttpResponse
+from django.shortcuts import HttpResponseRedirect
 from .models import Product
 
 # Create your views here.
@@ -33,7 +33,8 @@ def cart(request):
     if request.method == 'POST':
         # Ta in produkter som skall inhandlas
         # Skicka vidare till beställningssidan
-        pass
+
+        return HttpResponseRedirect('/order/')
     else:
         return render(request, 'main/cart.html')
 
