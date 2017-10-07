@@ -78,8 +78,8 @@ i.fa {
     left: 15px;
     top: 0;
     z-index: 99;
-    width: 131px;
-    height: 131px;
+    width: 130px;
+    height: 130px;
 }
 
 .img-bar-top-href:hover {
@@ -109,6 +109,7 @@ i.fa-cart-plus:hover {
     background-color: #fff;
     padding: 5px;
     border: 3px solid #1E90FF;
+    max-width: 100%;
 }
 
 .shopping_cart_mini .remove_div_mini {
@@ -199,7 +200,7 @@ i.fa-cart-plus:hover {
     padding: 25px;
 }
 
-.middle-img-plac-txt h3 {
+.middle-img-plac-txt p {
     width: 250px;
     padding: 25px;
     text-align: left;
@@ -211,15 +212,15 @@ i.fa-cart-plus:hover {
     font-size: 18px;
 }
 
-.blue-txt-plac h3 {
+.blue-txt-plac p {
     background-color: #1E90FF;
 }
 
-.pink-txt-plac h3 {
+.pink-txt-plac p {
     background-color: #FF1493;
 }
 
-.orange-txt-plac h3 {
+.orange-txt-plac p {
     background-color: #FF8C00;
 }
 
@@ -247,7 +248,7 @@ i.fa-cart-plus:hover {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
-    /*justify-content: center;*/
+    justify-content: center;
     border-top: 2px solid rgba(255, 255, 255, 0.095);
     /*background-color: #fff;*/
 }
@@ -258,12 +259,13 @@ i.fa-cart-plus:hover {
     padding: 20px;
     margin-top: 5px;
     justify-content: center;
+    border-radius: 20%;
 }
 
 .merch img:hover {
     cursor: pointer;
     background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
-    border-radius: 20%;
+    /*border-radius: 20%;*/
 }
 
 #p-show {
@@ -427,6 +429,10 @@ footer p {
 
 .inside_developer .emil_ {
     margin-right: 10px;
+}
+
+.inside_developer .felix_ {
+    margin-left: 10px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -688,17 +694,13 @@ i.fa-cart-arrow-down:hover {
 
 
 @media screen and (max-width: 1850px) {
-    .middle-img-plac-txt h3 {
-        margin-top: 10px;
-    }
-    
-    .img-elevkar-itg {
+    .middle-img-plac-txt p {
         margin-top: 10px;
     }
 } 
 
 @media screen and (max-width: 1540px) {
-    .middle-img-plac-txt h3 {
+    .middle-img-plac-txt p {
         width: 210px;
         height: 150px;
         font-size: 13px;
@@ -739,9 +741,31 @@ i.fa-cart-arrow-down:hover {
     .info-txt p {
         font-size: 18px;
     }
-    
+
     #p-show {
         font-size: 22px;
+    }
+
+    .shopping_cart_mini {
+        width: 400px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table thead th {
+        font-size: 16px;
+        width: 10%;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td,
+    .shopping_cart_mini .simpleCart_items table tbody td a {
+        font-size: 11px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td a:hover {
+        padding: 1px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td input {
+        font-size: 11px;
     }
     
 }
@@ -782,15 +806,15 @@ i.fa-cart-arrow-down:hover {
         font-size: 40px;
         padding: 0;
         text-align: center;
+        height: auto;
     }
     
     i.fa-cart-plus {
-        align-items: center;
+        position: absolute;
+        top: 10%;
+        left: 40%;
         font-size: 3rem;
         color: #000;
-        top: 130px; 
-        right: 100px;
-        left: 100px;
     }   
     
     i.fa-cart-plus:hover {
@@ -800,20 +824,19 @@ i.fa-cart-arrow-down:hover {
 }
 
 @media screen and (max-width: 400px) {
+    .middle-img-plac-txt {
+        justify-content: center;
+    }
+
     .first-img-middle-plac {
         width: 200px;
         height: auto;
     }
     
-    .middle-img-plac-txt h3 {
+    .middle-img-plac-txt p {
         width: 150px;
         height: auto;
-        font-size:11px;
-    }
-    
-    .img-elevkar-itg img {
-        width: 200px;
-        height: auto;
+        font-size: 11px;
     }
     
     .img-vertikal-itg-href img {

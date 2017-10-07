@@ -1,40 +1,35 @@
-<!DOCTYPE html>
+<!Doctype html>
     <html>
         <head>
-                {% load static %}
-               <!--Fonts-->
-               <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" >
-               
-               <!--CSS Stylesheets-->
-               <link rel="stylesheet" type="text/css" href="{% static 'main/main.css' %}" />
-               
-               <!--scale and charset-->
-               <meta charset="utf-8">
-               <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-               
-               <!--Title of page-->
-               <title>ITG Market</title>
-               
-               <!--Icon Head-->
-               <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-32x32.png" sizes="32x32" />
-               <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-192x192.png" sizes="192x192" />
-               <link rel="apple-touch-icon-precomposed" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-180x180.png" />
-               <meta name="msapplication-TileImage" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-270x270.png" />
-               
-               <!-- ? -->
-               <link rel="stylesheet" id="coToolbarStyle" type="text/css" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" />
-               
-               <!-- Icon library FB TW IG etc. -->
-               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-               <!-- JS Code -->
-               <script src="{% static 'wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js' %}"></script>
-               <script src="{% static 'wojodesign-simplecart-js-51a9a38/simpleCart.js' %}"></script>
-               <script src="{% static 'main/main.js' %}"></script>
-
+            {% load static %}
+            <!--fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" >
+            
+            <!--CSS Stylesheets-->
+            <link rel="stylesheet" type="text/css" href="{% static 'main/main.css' %}" />
+            
+            <!--scale and charset-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+            
+            <!--Title of page-->
+            <title>ITG Market</title>
+            
+            <!--Icon Head-->
+            <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-32x32.png" sizes="32x32" />
+            <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-192x192.png" sizes="192x192" />
+            <link rel="apple-touch-icon-precomposed" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-180x180.png" />
+            <meta name="msapplication-TileImage" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-270x270.png" />
+            
+            <!-- ? -->
+            <link rel="stylesheet" id="coToolbarStyle" type="text/css" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" />
+            
+            <!-- Icon library FB TW IG etc. -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+             
         </head>
         <body>
-             <header>
+            <header>
                 <div id="header">
                     <div id="top-header-div">
                         <div id="headline-img-txt">
@@ -57,17 +52,35 @@
                     </div>
                 </div>
             </header>
-            <div class="f1f1f1-color-div"></div>
-
-
-			<form action= "/cart/" method="POST">
-                {% csrf_token %}
-                <main>
-                    <div class="simpleCart_items"></div>
-                    <p class="final_total_p">Grand Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></p>
-                    <p class="checkout_p"><a href="javascript:;" class="simpleCart_checkout">Checkout</a></p>
-                </main>
-            </form>
+            <div class="f1f1f1-color-div" ></div>
+            
+            
+            
+            
+            
+            <div id="shopping-cart-middle-start">
+                <div id="shooping-cart-middle">
+                    <div class="shooping-cart-hard-html-css">
+                        <div class="i-dont-know-what-to-do">
+                            <div class="top-shopping-cart-html">
+                                <div class="top-shopping-cart-txt">
+                                    <div class="kundvagn-txt-h2">
+                                        <form action="/order/" method="post">
+                                            {% csrf_token %}
+                                            <input type="submit" />
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
             
             <div class="f1f1f1-color-div"></div>
             <footer>
@@ -75,13 +88,13 @@
                     <div class="footer-div-content">
                         <div class="footer-img-vertical">
                             <div class="img-vertikal-itg-href">
-                                <a href="http://it-gymnasiet.se/">
+                            <a><style>.img-vertikal-itg-href:hover { opacity: 1;}</style>
                                     <img src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itgymnasiet_logo_horizontal.png" srcset="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itgymnasiet_logo_horizontal@2x.png 520w" width="260px" height="18px" />
                                 </a>
                             </div>
                         </div>
                         <div class="footer-inforamtion">
-                            <h2>Headquarters - ITG Göteborg</h2>
+                            <h2>Headquartes - ITG Göteborg</h2>
                                 <p style="text-align: center;"> 
                                     Besökadress:
                                     <br>
@@ -97,7 +110,7 @@
                                 <p style="text-align: center;">
                                     E-post:
                                     <br>
-                                    info.headquarters@itgmarketplace.se
+                                    info.goteborg@it-gymnasiet.se
                                 </p>
                         </div>
                         <div class="line-border-top"></div>
