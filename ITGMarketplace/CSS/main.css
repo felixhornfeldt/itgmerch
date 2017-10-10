@@ -10,6 +10,8 @@ body {
 a {
     background-color: transparent;
     transition: all .5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
 }
 
 .blue {
@@ -102,7 +104,7 @@ i.fa-cart-plus:hover {
     width: 500px;
     height: auto;
     margin-top: 1%;
-    position: absolute;
+    position: absolute !important;
     right: 1%;
     background-color: #fff;
     padding: 5px;
