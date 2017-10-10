@@ -1,9 +1,9 @@
 <!Doctype html>
-    <html lang="sv">
+    <html>
         <head>
             {% load static %}
-            <!--Fonts-->
-            <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" />
+            <!--fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" >
             
             <!--CSS Stylesheets-->
             <link rel="stylesheet" type="text/css" href="{% static 'main/main.css' %}" />
@@ -19,14 +19,14 @@
             <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-32x32.png" sizes="32x32" />
             <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-192x192.png" sizes="192x192" />
             <link rel="apple-touch-icon-precomposed" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-180x180.png" />
+            <meta name="msapplication-TileImage" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-270x270.png" />
+            
+            <!-- ? -->
+            <link rel="stylesheet" id="coToolbarStyle" type="text/css" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" />
             
             <!-- Icon library FB TW IG etc. -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
              
-            <!-- JS Code -->
-            <script src="{% static 'wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js' %}"></script>
-            <script src="{% static 'wojodesign-simplecart-js-51a9a38/simpleCart.js' %}"></script>
-            <script src="{% static 'main/main.js' %}"></script>
         </head>
         <body>
             <header>
@@ -35,15 +35,15 @@
                         <div id="headline-img-txt">
                             <div id="headline" class="headline">
                                 <div class="headline-img">
-                                    <a class="img-bar-top-href" href="index.html">
-                                        <img title="Home" src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit.png" class="img-head-top-bar" />
+                                    <a class="img-bar-top-href" href="/">
+                                        <img src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit.png" alt srcset="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit@2x.png 200w" width="131px" height="131px" class="img-head-top-bar" />
                                     </a>    
                                 </div>
                                 <div class="headline-text">
                                     <h1><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> <a class="white">M</a>arketplace</h1>
                                 </div>
                                 <div class="cart-button">
-                                    <a onclick="showDiv()">
+                                    <a href="cart">
                                         <i class="fa fa-cart-plus"></i>
                                     </a>
                                 </div>
@@ -52,61 +52,39 @@
                     </div>
                 </div>
             </header>
-            <div class="shopping_cart_mini hide" id="show">
-                <a onclick="removeDiv()" class="remove_div_mini">X</a>
-                <h1>Kundvagn</h1>
-                <div class="simpleCart_items"></div>
-                <p class="grand_total_p">Grand Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></p>
-                <a href="shopping-cart.html"><button class="shopping_cart_mini_button">Till Kundvagn</button></a>
-            </div>
             <div class="f1f1f1-color-div"></div>
-            <main>
-                <div id="inforamtion-container-fluid-merch">
-                    <div id="information-about-merch">
-                        <div class="simpleCart_shelfItem">
-                            <div class="info-img">
-                                <img class="item_thumb" src= {{ product.image }} />
-                            </div>
-                            <div class="info-txt">
-                                <h2 class="item_name"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> {{ product.name }}</h2>
-                                    <p>{{ product.description }}</p>
-                                <div class="info_price">
-                                    <p class="item_price">Pris: SEK {{ product.price }}</p>
-                                </div>
-                                <div class="size">
-                                    <p>Storlek:</p>
-                                    <select class="item_size">
-                                            <option value="XS">XS</option>
-                                            <option value="S">S</option>
-                                            <option value="M">M</option>
-                                            <option value="L">L</option>
-                                            <option value="XL">XL</option>
-                                    </select>
-                                </div>    
-                                <div class="buy-button">
-                                    <a href="{{ cart_url }}">
-                                        <i class="fa fa-cart-arrow-down item_add">
-                                        </i>
-                                    </a>
-                                </div>
-                            </div>
+            <div id="inforamtion-container-fluid-merch">
+                <div id="information-about-merch">
+                    <div class="inforamtion-img-txt-button">
+                        <div class="info-img">
+                            <img src= {{ product.image }} />
+                        </div>
+                        <div class="info-txt">
+                            <h2><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> {{ product.name }}</h2>
+                                <p>{{ product.description }}</p>
+                        <div class="buy-button">
+                            <a href="{{ cart_url }}">
+                                <i class="fa fa-cart-arrow-down">
+                                </i>
+                            </a>
+                        </div>
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
             <div class="f1f1f1-color-div"></div>
             <footer>
                 <div id="footer-div">
                     <div class="footer-div-content">
                         <div class="footer-img-vertical">
                             <div class="img-vertikal-itg-href">
-                                <a href="http://it-gymnasiet.se/">
-                                    <img title="it-gymnasiet.se" src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itgymnasiet_logo_horizontal.png" width="260px" height="18px" />
+                                <a><style>.img-vertikal-itg-href:hover { opacity: 1;}</style>
+                                    <img src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itgymnasiet_logo_horizontal.png" srcset="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itgymnasiet_logo_horizontal@2x.png 520w" width="260px" height="18px" />
                                 </a>
                             </div>
                         </div>
                         <div class="footer-inforamtion">
-                            <h2>Headquarters - ITG Göteborg</h2>
+                            <h2>Headquartes - ITG Göteborg</h2>
                                 <p style="text-align: center;"> 
                                     Besökadress:
                                     <br>
@@ -122,7 +100,7 @@
                                 <p style="text-align: center;">
                                     E-post:
                                     <br>
-                                    info.headquarters@itgmarketplace.se
+                                    info.goteborg@it-gymnasiet.se
                                 </p>
                         </div>
                         <div class="line-border-top"></div>
@@ -130,17 +108,17 @@
                             <ul class="social-media">
                                 <li>
                                     <a href="https://www.instagram.com/itgymnasietgoteborg/">
-                                        <i class="fa fa-instagram" title="instagram"></i>
+                                        <i class="fa fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/ITgymnasiet">
-                                        <i class="fa fa-facebook" title="facebook"></i>
+                                        <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://twitter.com/ITGymnasiet">
-                                        <i class="fa fa-twitter" title="twitter"></i>
+                                        <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
                             </ul>

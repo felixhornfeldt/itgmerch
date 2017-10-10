@@ -4,6 +4,7 @@ from django.conf import settings
 from .email import email
 import re
 from .add_order import add_order
+from django.views.decorators.csrf import csrf_exempt
 
 
 def success(request):
@@ -35,10 +36,11 @@ def rdr(request):
         return HttpResponseRedirect('review')
 
 
+@csrf_exempt
 def index(request):
     # Get order, add to session
     if request.method == "POST":
-        order_text = request.POST.get('order', 'empty')
+        order_text = request.POST.get('checkout', 'empty')
         request.session['order_text'] = order_text
     return HttpResponseRedirect("/soc/login/google-oauth2/?next=/order/review")
 
