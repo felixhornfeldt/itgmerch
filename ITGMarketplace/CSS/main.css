@@ -808,11 +808,19 @@ i.fa-cart-arrow-down:hover {
         text-align: center;
         height: auto;
     }
+
+    .f1f1f1-color-div {
+        height: 0;
+    }
     
     i.fa-cart-plus {
         position: absolute;
         top: 10%;
-        left: 40%;
+        background: #f1f1f1 !important;
+        right: 0;
+        width: auto;
+        height: auto !important;
+        border-radius: 0;
         font-size: 3rem;
         color: #000;
     }   
@@ -829,6 +837,7 @@ i.fa-cart-arrow-down:hover {
     }
 
     .first-img-middle-plac {
+        /*display: none;*/
         width: 200px;
         height: auto;
     }
@@ -906,5 +915,24 @@ i.fa-cart-arrow-down:hover {
     
     i.fa-cart-arrow-down {
         font-size: 40px;
+    }
+
+    /* shopping_cart_mini */
+    .shopping_cart_mini {
+        width: 100%;
+        position: absolute;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td img,
+    .shopping_cart_mini .simpleCart_items table tbody td a  {
+        display: none;
+    }
+
+    .shopping_cart_mini .simpleCart_items table thead th {
+        font-size: 14px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td {
+        font-size: 11px;
     }
 }
