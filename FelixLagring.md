@@ -96,3 +96,7 @@
                 <button class="shopping_cart_mini_button"><a href="shopping-cart.html">Till Kundvagn</a></button>
             </div>
              
+
+### Bildlänk
+
+http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit.png
