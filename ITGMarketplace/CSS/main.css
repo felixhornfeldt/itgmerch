@@ -110,6 +110,7 @@ i.fa-cart-plus:hover {
     padding: 5px;
     border: 3px solid #1E90FF;
     max-width: 100%;
+    z-index: 99;
 }
 
 .shopping_cart_mini .remove_div_mini {
@@ -797,6 +798,10 @@ i.fa-cart-arrow-down:hover {
 }
 
 @media screen and (max-width:500px) {
+    .middle-img-plac-txt {
+        justify-content: center;
+    }
+    
     .info-img img {
         width: 400px;
         height: 400px;
