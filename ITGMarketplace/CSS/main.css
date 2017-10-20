@@ -208,7 +208,8 @@ i.fa-cart-plus:hover {
     padding: 25px;
     text-align: left;
     color: white;
-    height: 229px;
+    /*height: 229px;*/
+    height: auto;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     max-width: 100%;
@@ -720,11 +721,17 @@ i.fa-cart-arrow-down:hover {
 } 
 
 @media screen and (max-width: 1540px) {
-    .middle-img-plac-txt p {
+    .middle-img-plac-txt div {
         width: 210px;
         height: 150px;
-        font-size: 13px;
+        margin: 0;
     }
+
+    .middle-img-plac-txt p {
+        font-size: 13px;
+        /*height: auto;*/
+    }
+    
     
     .first-img-middle-plac {
         width: 210px;
