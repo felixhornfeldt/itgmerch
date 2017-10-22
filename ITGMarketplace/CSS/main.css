@@ -418,12 +418,12 @@ footer p {
 
 .developer_ h2 {
     font-weight: 700;
-    font-style: italic;
+    /*font-style: italic;*/
     font-size: 40px;
     color: #fff;
 }
 
-.developer_ h2 a {
+/*.developer_ h2 a {
     font-weight: 700;
     font-style: italic;
     font-size: 40px;
@@ -434,7 +434,7 @@ footer p {
 .developer_ h2 a:hover {
     text-decoration: underline;
     opacity: 0.5;
-}
+}*/
 
 .developer_ p {
     font-size: 20px;
@@ -684,6 +684,7 @@ i.fa-cart-arrow-down:hover {
 
 .about_img_plus img {
     border: 2px solid #FF1493;
+    width: auto;
 }
 
 .about_text {
