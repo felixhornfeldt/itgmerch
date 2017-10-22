@@ -566,12 +566,14 @@ i.fa-cart-arrow-down:hover {
 }
 
 .simpleCart_items table thead th {
+    width: 10%;
     font-size: 40px;
     border-bottom: 2px solid #000;
 }
 
 .simpleCart_items table tbody td {
     padding-top: 10px;
+    font-size: 20px;
 }
 
 .simpleCart_items table tbody td .simpleCart_remove {
@@ -623,7 +625,7 @@ i.fa-cart-arrow-down:hover {
 }
 
 .checkout_button, 
-.kepp_shopping_button, 
+.kepp_shopping_button,
 .empty_shopping_cart {
     color: #fff;
     width: auto;
@@ -742,7 +744,7 @@ i.fa-cart-arrow-down:hover {
     
     .merch img {
         width: 200px;
-        height: 200px;
+        height: 220px;
     }
     
     .info-img img {
@@ -789,10 +791,6 @@ i.fa-cart-arrow-down:hover {
         font-size: 11px;
     }
 
-    .shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove:hover {
-        padding: 1px;
-    }
-
     .shopping_cart_mini .simpleCart_items table tbody td input {
         font-size: 11px;
     }
@@ -823,30 +821,49 @@ i.fa-cart-arrow-down:hover {
     .middle-img-plac-txt {
         justify-content: center;
     }
+
+    .simpleCart_items table thead th {
+        font-size: 30px;
+    }
+
+    .simpleCart_items table tbody td {
+        font-size: 16px;
+    }
+
+    .checkout_button, 
+    .kepp_shopping_button, 
+    .empty_shopping_cart {
+        font-size: 16px;
+    }
+
+    .simpleCart_items table img {
+        width: 75px;
+        height: inherit;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td {
+        padding-top: 5px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td img {
+        width: 50px;
+        height: auto;
+    }
+
+    .shopping_cart_buttons_top {
+        display: none;
+    }
 }
 
 @media screen and (max-width:500px) {
-    /*.middle-img-plac-txt {
-        justify-content: center;
-    }*/
-
-    .first-img-middle-plac {
-        /*display: none;*/
-        width: 150px;
-        height: auto;
-    }
-    
     .info-img img {
         width: 400px;
         height: 400px;
     }
 
     .img-bar-top-href img {
-        /*display: none;*/
         width: 100px;
         height: 100px;
-        /*left: 0;
-        top: 0;*/
     }
     
     .headline-text h1 {
@@ -875,6 +892,56 @@ i.fa-cart-arrow-down:hover {
         background: none;
         opacity: 0.8;
     }
+
+    .shopping_cart_mini .grand_total_p {
+        font-size: 16px;
+    }
+
+    .shopping_cart_mini h1 {
+        font-size: 30px;
+    }
+
+    .shopping_cart_main {
+        min-height: 300px;
+    }
+
+    .simpleCart_items table thead th {
+        font-size: 16px;
+    }
+
+    .simpleCart_items table tbody td {
+        font-size: 12px;
+    }
+
+    .simpleCart_items table tbody td input {
+        width: 70%;
+    }
+
+    .simpleCart_items table tbody td img {
+        width: 50px;
+    }
+
+    .simpleCart_items table tbody td .simpleCart_remove {
+        font-size: 16px;
+    }
+
+    .grand_total_p {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .checkout_button, 
+    .kepp_shopping_button, 
+    .empty_shopping_cart {
+        font-size: 14px;
+        margin: 0;
+        width: auto;
+    }
+
+    .shopping_cart_buttons_bottom {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:450px) {
@@ -888,14 +955,46 @@ i.fa-cart-arrow-down:hover {
     .shopping_cart_mini {
         width: 375px ;
     }
+
+    .merch img {
+        padding: 2px;
+        height: auto;
+    }
+
+    .info-img img {
+        width: 200px;
+        height: auto;
+    }
+    
+    .info-txt {
+        max-width: 90%;
+    }
+    
+    .info-txt h2 {
+        font-size: 30px;
+    }
+
+    .size select, 
+    .size option,
+    .info-txt .info_price p,
+    .info-txt .size p {
+        font-size: 16px;
+    }
+    
+    .info-txt p {
+        font-size: 12px;
+    }
+    
+    i.fa-cart-arrow-down {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width:400px) {
-    /*.first-img-middle-plac {
-        display: none;
-        width: 200px;
+    .first-img-middle-plac {
+        width: 150px;
         height: auto;
-    }*/
+    }
     
     .middle-img-plac-txt div {
         width: 150px;
@@ -908,83 +1007,17 @@ i.fa-cart-arrow-down:hover {
         height: auto;
     }
     
-    .social-media {
-        width: 200px;
-        height: auto;
-    }
-    
-    i.fa {
-        width: 3rem;
-        height: 2.25rem;
-        padding-top: 0.25rem;
-        background-color: transparent;
-    }
-    
-    .fa-instagram:hover {
-        color: dodgerblue;
-        background-color: transparent;
-    }
-
-    .fa-facebook:hover {
-        color: deeppink;
-        background-color: transparent;
-    }
-
-    .fa-twitter:hover {
-        background-color: transparent;
-        color: darkorange;
-    }
-    
-    .social-media li {
-        margin: 0.25rem;
-    }
-    
-    .merch img {
-        width: 200px;
-        height: 200px;
-        padding: 2px;
-    }
-    
-    /*i.fa-cart-plus {
-        padding: 0;
-        margin: 0;
-        border: 0;
-    }*/
-    
-    .info-img img {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .info-txt {
-        max-width: 200px;
-    }
-    
-    .info-txt h2 {
-        font-size: 40px;
-    }
-
-    .size select, 
-    .size option {
-        font-size: 12px;
-    }
-    
-    .info-txt p {
-        font-size: 12px;
-    }
-    
-    i.fa-cart-arrow-down {
-        font-size: 40px;
-    }
-
-    /* shopping_cart_mini */
     .shopping_cart_mini {
         width: 350px;
     }
 
-    .shopping_cart_mini .simpleCart_items table tbody td img,
     .shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove  {
-        display: none;
+        font-size: 11px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td img {
+        width: 35px;
+        height: auto;
     }
 
     .shopping_cart_mini .simpleCart_items table thead th {
@@ -994,7 +1027,24 @@ i.fa-cart-arrow-down:hover {
     .shopping_cart_mini .simpleCart_items table tbody td {
         font-size: 11px;
     }
-}
+
+    .simpleCart_items table tbody td img {
+        width: 40px;
+    }
+
+    .simpleCart_items table tbody td {
+        font-size: 11px;
+    }
+
+    .simpleCart_items table thead th {
+        font-size: 15px;
+    }
+
+    .checkout_button, 
+    .kepp_shopping_button, 
+    .empty_shopping_cart {
+        font-size: 12px;
+    }
 
 @media screen and (max-width:350px) {
     .headline-text h1 {
@@ -1012,5 +1062,25 @@ i.fa-cart-arrow-down:hover {
 
     .shopping_cart_mini {
         width: 300px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td img,
+    .shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove,
+    .simpleCart_items table tbody td img,
+    .empty_shopping_cart  {
+        display: none;
+    }
+
+    .checkout_button, 
+    .kepp_shopping_button {
+        font-size: 12px;
+    }
+
+    .shopping_cart_main {
+        min-height: 200px;
+    }
+
+    .shopping_cart_mini .grand_total_p {
+        padding-top: 10px;
     }
 }
