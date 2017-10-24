@@ -10,8 +10,6 @@ body {
 a {
     background-color: transparent;
     transition: all .5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
 }
 
 .blue {
@@ -59,21 +57,17 @@ i.fa {
 /* Header CSS */
 
 
-.headline {
-    background-color: #000;
-}
-
 .headline-text h1 {
     text-align: center;
     margin: 0;
     padding: 0;
     border: 0;
-    /*background-color: #000;*/
+    background-color: #000;
     height: 120px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 80px;
-    font-style: normal;
+    font-style: italic;
     justify-content: center;
 }
 
@@ -104,19 +98,16 @@ i.fa-cart-plus:hover {
     background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
 }
 
-/* Shopping cart mini display */
-
 .shopping_cart_mini {
-    width: 700px;
+    width: 500px;
     height: auto;
     margin-top: 1%;
-    position: absolute !important;
+    position: absolute;
     right: 1%;
     background-color: #fff;
     padding: 5px;
     border: 3px solid #1E90FF;
     max-width: 100%;
-    z-index: 99;
 }
 
 .shopping_cart_mini .remove_div_mini {
@@ -141,32 +132,27 @@ i.fa-cart-plus:hover {
     margin-bottom: 5px;
     border: 0;
     border-bottom: 2px solid #FF1493;
-    font-size: 40px;
+    font-size: 32px;
 }
  
 .shopping_cart_mini .simpleCart_items table tbody td img {
-    width: 70px;
+    width: 50px;
     height: auto;
 }
 
 .shopping_cart_mini .simpleCart_items table thead th {
-    font-size: 24px;
+    font-size: 18px;
     width: 10%;
 }
 
-.shopping_cart_mini .simpleCart_items table tbody td {
-    font-size: 16px;
+.shopping_cart_mini .simpleCart_items table tbody td,
+.shopping_cart_mini .simpleCart_items table tbody td a {
+    font-size: 12px;
     color: #000;
 }
 
-.shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove {
-    font-size: 16px;
-    color: #ff0000;
-}
-
-.shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove:hover {
+.shopping_cart_mini .simpleCart_items table tbody td a:hover {
     padding: 5px;
-    font-size: 32px;
 }
 
 .shopping_cart_mini .simpleCart_items table tbody td input {
@@ -178,7 +164,7 @@ i.fa-cart-plus:hover {
     padding: 0;
     margin: 0;
     text-align: right;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .shopping_cart_mini button {
@@ -188,13 +174,16 @@ i.fa-cart-plus:hover {
     padding: 5px 0;
     margin-top: 10px;
     cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
 }
 
 .shopping_cart_mini button:hover {
     opacity: 0.7;
+}
+
+.shopping_cart_mini a button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
 }
 
 
@@ -209,6 +198,30 @@ i.fa-cart-plus:hover {
     padding: 25px;
 }
 
+.middle-img-plac-txt p {
+    width: 250px;
+    padding: 25px;
+    text-align: left;
+    color: white;
+    height: 229px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    font-size: 18px;
+}
+
+.blue-txt-plac p {
+    background-color: #1E90FF;
+}
+
+.pink-txt-plac p {
+    background-color: #FF1493;
+}
+
+.orange-txt-plac p {
+    background-color: #FF8C00;
+}
+
 .middle-img-plac-txt {
     align-items: flex-start;
     display: flex;
@@ -216,46 +229,12 @@ i.fa-cart-plus:hover {
     /*justify-content: center;*/
 }
 
-.middle-img-plac-txt div {
-    max-height: 279px;
-    width: 250px;
-    overflow: hidden;
-    padding: 25px;
-    height: 229px;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    text-align: left;
-}
-
-.middle-img-plac-txt div p {
-    padding: 0;
-    margin: auto;
-    font-size: 18px;
-    height: auto;
-    max-width: 100%;
-}
-
-.middle-img-plac-txt div h2 {
-    padding: 0;
-    margin: auto;
-    border: 0;
-}
-
-.blue-txt-plac  {
-    background-color: #1E90FF;
-}
-
-.pink-txt-plac  {
-    background-color: #FF1493;
-}
-
-.orange-txt-plac  {
-    background-color: #FF8C00;
-}
-
 .first-img-middle-plac {
     position: relative;
+}
+
+.img-elevkar-itg:hover {
+    opacity: 0.8;
 }
 
 
@@ -287,7 +266,7 @@ i.fa-cart-plus:hover {
     /*border-radius: 20%;*/
 }
 
-#h3-show {
+#p-show {
     text-align: center;
     vertical-align: baseline;
     font-size: 28px;
@@ -406,7 +385,7 @@ footer p {
     height: auto;
 }
 
-/*.developer_ {
+.developer_ {
     justify-content: center;
     text-align: center;
 }
@@ -452,7 +431,7 @@ footer p {
 
 .inside_developer .felix_ {
     margin-left: 10px;
-}*/
+}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -527,8 +506,7 @@ i.fa-cart-arrow-down:hover {
     font-weight: bold;
 }
 
-.size select, 
-.size option {
+.size select, .size option {
     font-size: 20px;
     text-align: left;
 }
@@ -566,28 +544,23 @@ i.fa-cart-arrow-down:hover {
 }
 
 .simpleCart_items table thead th {
-    width: 10%;
     font-size: 40px;
     border-bottom: 2px solid #000;
 }
 
 .simpleCart_items table tbody td {
     padding-top: 10px;
-    font-size: 20px;
-}
+}    
 
-.simpleCart_items table tbody td .simpleCart_remove {
+.simpleCart_items table tbody td a {
     text-decoration: none;
-    font-size: 30px;
-    color: #ff0000;
-    font-weight: 900;
+    color: #000;
 }
 
-.simpleCart_items table tbody td .simpleCart_remove:hover {
-    font-size: 60px;
-    -webkit-transition: all ease-in-out 0.5s 0.5ms ;
-    -moz-transition: all ease-in-out 0.5s 0.25ms;
-    transition: all ease-in-out 0.5s 0.25ms;
+.simpleCart_items table tbody td a:hover {
+    background-color: #FF0000;
+    padding: 5px 10px;
+    color: #fff;
 }
 
 .simpleCart_items table tbody td input {
@@ -625,7 +598,7 @@ i.fa-cart-arrow-down:hover {
 }
 
 .checkout_button, 
-.kepp_shopping_button,
+.kepp_shopping_button, 
 .empty_shopping_cart {
     color: #fff;
     width: auto;
@@ -684,7 +657,6 @@ i.fa-cart-arrow-down:hover {
 
 .about_img_plus img {
     border: 2px solid #FF1493;
-    width: auto;
 }
 
 .about_text {
@@ -719,33 +691,32 @@ i.fa-cart-arrow-down:hover {
 /* Media CSS */
 
 
-/*@media screen and (max-width: 1850px) {
-    .middle-img-plac-txt div {
+@media screen and (max-width: 1850px) {
+    .middle-img-plac-txt p {
         margin-top: 10px;
     }
-}*/
+} 
 
 @media screen and (max-width: 1540px) {
-    .middle-img-plac-txt div {
+    .middle-img-plac-txt p {
         width: 210px;
         height: 150px;
-        margin: 0;
-    }
-
-    .middle-img-plac-txt div p {
         font-size: 13px;
-        height: auto;
     }
-    
     
     .first-img-middle-plac {
         width: 210px;
         height: auto;
     }
     
+    .img-elevkar-itg img {
+        width: 210px;
+        height: 200px;
+    }
+    
     .merch img {
         width: 200px;
-        height: 220px;
+        height: 200px;
     }
     
     .info-img img {
@@ -769,12 +740,7 @@ i.fa-cart-arrow-down:hover {
         font-size: 18px;
     }
 
-    .size select, 
-    .size option {
-        font-size: 18px;
-    }
-
-    #h3-show {
+    #p-show {
         font-size: 22px;
     }
 
@@ -788,8 +754,12 @@ i.fa-cart-arrow-down:hover {
     }
 
     .shopping_cart_mini .simpleCart_items table tbody td,
-    .shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove {
+    .shopping_cart_mini .simpleCart_items table tbody td a {
         font-size: 11px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td a:hover {
+        padding: 1px;
     }
 
     .shopping_cart_mini .simpleCart_items table tbody td input {
@@ -808,51 +778,19 @@ i.fa-cart-arrow-down:hover {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1010px) {
     .info-img img {
         width: 550px;
         height: 550px;
     }
-
-    .header-place-h1 {
+    
+    .img-bar-top-href {
         display: none;
-        visibility: hidden;
     }
-
-    .middle-img-plac-txt {
-        justify-content: center;
-    }
-
-    .simpleCart_items table thead th {
-        font-size: 30px;
-    }
-
-    .simpleCart_items table tbody td {
-        font-size: 16px;
-    }
-
-    .checkout_button, 
-    .kepp_shopping_button, 
-    .empty_shopping_cart {
-        font-size: 16px;
-    }
-
-    .simpleCart_items table img {
-        width: 75px;
-        height: inherit;
-    }
-
-    .shopping_cart_mini .simpleCart_items table tbody td {
-        padding-top: 5px;
-    }
-
-    .shopping_cart_mini .simpleCart_items table tbody td img {
-        width: 50px;
-        height: auto;
-    }
-
-    .shopping_cart_buttons_top {
-        display: none;
+    
+    .headline-text h1 {
+        text-align: left;
+        padding-left: 20px;
     }
 }
 
@@ -861,11 +799,6 @@ i.fa-cart-arrow-down:hover {
         width: 400px;
         height: 400px;
     }
-
-    .img-bar-top-href img {
-        width: 100px;
-        height: 100px;
-    }
     
     .headline-text h1 {
         font-size: 40px;
@@ -873,131 +806,32 @@ i.fa-cart-arrow-down:hover {
         text-align: center;
         height: auto;
     }
-
-    .f1f1f1-color-div {
-        height: 50px;
-    }
     
     i.fa-cart-plus {
-        right: 1%;
-        top: 1%;
-        margin: 0;
-        font-size: 40px;
-        border-radius: 50%;
-        padding: 0;
-        border: 0;
-        background: none;
-    }  
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        font-size: 3rem;
+        color: #000;
+    }   
     
     i.fa-cart-plus:hover {
         background: none;
         opacity: 0.8;
     }
-
-    .shopping_cart_mini .grand_total_p {
-        font-size: 16px;
-    }
-
-    .shopping_cart_mini h1 {
-        font-size: 30px;
-    }
-
-    .shopping_cart_main {
-        min-height: 300px;
-    }
-
-    .simpleCart_items table thead th {
-        font-size: 16px;
-    }
-
-    .simpleCart_items table tbody td {
-        font-size: 12px;
-    }
-
-    .simpleCart_items table tbody td input {
-        width: 70%;
-    }
-
-    .simpleCart_items table tbody td img {
-        width: 50px;
-    }
-
-    .simpleCart_items table tbody td .simpleCart_remove {
-        font-size: 16px;
-    }
-
-    .grand_total_p {
-        font-size: 16px;
-        padding: 10px 0;
-    }
-
-    .checkout_button, 
-    .kepp_shopping_button, 
-    .empty_shopping_cart {
-        font-size: 14px;
-        margin: 0;
-        width: auto;
-    }
-
-    .shopping_cart_buttons_bottom {
-        display: flex;
-        justify-content: center;
-    }
 }
 
-@media screen and (max-width:450px) {
-    .img-bar-top-href img {
-        width: 75px;
-        height: 75px;
-        left: 0;
-        top: 0;
+@media screen and (max-width: 400px) {
+    .middle-img-plac-txt {
+        justify-content: center;
     }
 
-    .shopping_cart_mini {
-        width: 375px ;
-    }
-
-    .merch img {
-        padding: 2px;
-        height: auto;
-    }
-
-    .info-img img {
+    .first-img-middle-plac {
         width: 200px;
         height: auto;
     }
     
-    .info-txt {
-        max-width: 90%;
-    }
-    
-    .info-txt h2 {
-        font-size: 30px;
-    }
-
-    .size select, 
-    .size option,
-    .info-txt .info_price p,
-    .info-txt .size p {
-        font-size: 16px;
-    }
-    
-    .info-txt p {
-        font-size: 12px;
-    }
-    
-    i.fa-cart-arrow-down {
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width:400px) {
-    .first-img-middle-plac {
-        width: 150px;
-        height: auto;
-    }
-    
-    .middle-img-plac-txt div {
+    .middle-img-plac-txt p {
         width: 150px;
         height: auto;
         font-size: 11px;
@@ -1008,80 +842,67 @@ i.fa-cart-arrow-down:hover {
         height: auto;
     }
     
-    .shopping_cart_mini {
-        width: 350px;
-    }
-
-    .shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove  {
-        font-size: 11px;
-    }
-
-    .shopping_cart_mini .simpleCart_items table tbody td img {
-        width: 35px;
+    .social-media {
+        width: 200px;
         height: auto;
     }
-
-    .shopping_cart_mini .simpleCart_items table thead th {
-        font-size: 14px;
+    
+    i.fa {
+        width: 3rem;
+        height: 2.25rem;
+        padding-top: 0.25rem;
+        background-color: transparent;
+    }
+    
+    .fa-instagram:hover {
+        color: dodgerblue;
+        background-color: transparent;
     }
 
-    .shopping_cart_mini .simpleCart_items table tbody td {
-        font-size: 11px;
+    .fa-facebook:hover {
+        color: deeppink;
+        background-color: transparent;
     }
 
-    .simpleCart_items table tbody td img {
-        width: 40px;
+    .fa-twitter:hover {
+        background-color: transparent;
+        color: darkorange;
     }
-
-    .simpleCart_items table tbody td {
-        font-size: 11px;
+    
+    .social-media li {
+        margin: 0.25rem;
     }
-
-    .simpleCart_items table thead th {
-        font-size: 15px;
+    
+    .merch img {
+        width: 200px;
+        height: 200px;
+        padding: 2px;
     }
-
-    .checkout_button, 
-    .kepp_shopping_button, 
-    .empty_shopping_cart {
-        font-size: 12px;
-    }
-
-@media screen and (max-width:350px) {
-    .headline-text h1 {
-        font-size: 30px;
-    }
-
+    
     i.fa-cart-plus {
-        font-size: 30px;
-        right: 0.5%;
-        top: 0.5%;
-        margin: 0;
         padding: 0;
+        margin: 0;
         border: 0;
     }
-
-    .shopping_cart_mini {
-        width: 300px;
+    
+    .info-img img {
+        width: 200px;
+        height: 200px;
     }
-
-    .shopping_cart_mini .simpleCart_items table tbody td img,
-    .shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove,
-    .simpleCart_items table tbody td img,
-    .empty_shopping_cart  {
-        display: none;
+    
+    .info-txt {
+        max-width: 200px;
     }
-
-    .checkout_button, 
-    .kepp_shopping_button {
+    
+    .info-txt h2 {
+        font-size: 40px;
+    }
+    
+    .info-txt p {
         font-size: 12px;
     }
-
-    .shopping_cart_main {
-        min-height: 200px;
-    }
-
-    .shopping_cart_mini .grand_total_p {
-        padding-top: 10px;
+    
+    i.fa-cart-arrow-down {
+        font-size: 40px;
     }
 }

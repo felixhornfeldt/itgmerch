@@ -12,8 +12,9 @@ def email(usr_email, name, order_number, order):
 
     for i in range(1, (int(order['itemCount']) + 1)):
         order_text += "<tr>"
-        order_text += "<td>" +  order[('item_name_' + str(i))] + "</td>"
+        order_text += "<td>" + order[('item_name_' + str(i))] + "</td>"
         order_text += "<td>" + order[('item_quantity_' + str(i))] + "</td>"
+        order_text += "<td>" + ((order[('item_options_' + str(i))]).split(' '))[1] + "</td>"
         order_text += "<td>" + order[('item_price_' + str(i))] + "</td>"
         order_text += "</tr>"
 
