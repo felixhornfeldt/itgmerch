@@ -8,7 +8,7 @@ class Order(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField(max_length=200)
     order_number = models.IntegerField()
-    order = models.CharField(max_length=400)
+    order = models.TextField(max_length=1000)
     date_time = models.DateTimeField(default=datetime.now())
 
     def __str__(self):

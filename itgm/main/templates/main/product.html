@@ -35,7 +35,7 @@
                         <div id="headline-img-txt">
                             <div id="headline" class="headline">
                                 <div class="headline-img">
-                                    <a class="img-bar-top-href" href="index.html">
+                                    <a class="img-bar-top-href" href="/">
                                         <img title="Home" src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit.png" class="img-head-top-bar" />
                                     </a>    
                                 </div>
@@ -57,7 +57,7 @@
                 <h1>Kundvagn</h1>
                 <div class="simpleCart_items"></div>
                 <p class="grand_total_p">Grand Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></p>
-                <a href="shopping-cart.html"><button class="shopping_cart_mini_button">Till Kundvagn</button></a>
+                <a href="/cart/"><button class="shopping_cart_mini_button">Till Kundvagn</button></a>
             </div>
             <div class="f1f1f1-color-div"></div>
             <main>
@@ -76,11 +76,15 @@
                                 <div class="size">
                                     <p>Storlek:</p>
                                     <select class="item_size">
+                                            {% for size in sizes %}
+                                                <option value="{{ size }}">{{ size }}</option>
+                                            {% endfor %}
+                                            <!--
                                             <option value="XS">XS</option>
                                             <option value="S">S</option>
                                             <option value="M">M</option>
                                             <option value="L">L</option>
-                                            <option value="XL">XL</option>
+                                            <option value="XL">XL</option> -->
                                     </select>
                                 </div>    
                                 <div class="buy-button">

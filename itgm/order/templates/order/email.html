@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Email</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
+    <img src="http://231077.net:8008/weloveit.jpg" alt="ITG Logo" />
     <h1>Hej {{ name }}!</h1>
-    <p>Din order är skapad, och du har blivit tilldelad ordernummer: {{ order_number }}.<br>
+    <p>Din order är skapad, och du har blivit tilldelad ordernummer: <b>{{ order_number }}.</b><br>
         Du är välkommen att hämta ut ordern nästa arbetsdag hos Nina i cafét.<br>
     Ange då de fyra sista siffrorna i ordernumret.</p>
     <p>Din order ser ut så här:</p>
-    <p>{{ order }}</p>
+    <p>
+        <table>
+        <tr>
+            <th>Produkt</th>
+            <th>Antal</th>
+            <th>Pris per styck</th>
+        </tr>
+        {% autoescape off %}{{ order }}{% endautoescape %}
+        </table>
+    </p>
     <p>Sincerely, <br>ITG Marketplace</p>
 </body>
 </html>

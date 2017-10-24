@@ -17,13 +17,15 @@ def product(request):
     if request.method == 'GET':
         product_id = request.GET.get('id', '999')
         actual_product = Product.objects.get(id_n=product_id)
+        sizes = eval(actual_product.sizes)
         # print(product_id)
         # if int(product_id) == 1:
         #    return HttpResponse('Hey you made it!!!')
 
         context = {
             'product': actual_product,
-            'cart_url': cart_url
+            'cart_url': cart_url,
+            'sizes': sizes,
         }
 
     return render(request, 'main/product.html', context=context)
