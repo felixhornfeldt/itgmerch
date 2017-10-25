@@ -6,7 +6,7 @@
             <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" />
             
             <!--CSS Stylesheets-->
-            <link rel="stylesheet" type="text/css" href="CSS\main.css" />
+            <link rel="stylesheet" type="text/css" href="{% static 'main/main.css' %}" />
             
             <!--scale and charset-->
             <meta charset="utf-8">
@@ -24,9 +24,9 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
              
             <!-- JS Code -->
-            <script src="wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js"></script>
-            <script src="wojodesign-simplecart-js-51a9a38/simpleCart.js"></script>
-            <script src="JS/main.js"></script>
+            <script src="{% static 'wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js' %}"></script>
+            <script src="{% static 'wojodesign-simplecart-js-51a9a38/simpleCart.js' %}"></script>
+            <script src="{% static 'main/main.js' %}"></script>
         </head>
         <body class="body" id="body">
             <header>
@@ -35,7 +35,7 @@
                         <div id="headline-img-txt">
                             <div id="headline" class="headline">
                                 <div class="headline-img">
-                                    <a class="img-bar-top-href" href="index.html">
+                                    <a class="img-bar-top-href" href="/">
                                         <img alt="back to home" title="Home" src="img/header_WLI_mini.png" class="img-head-top-bar" />
                                     </a>    
                                 </div>
@@ -57,7 +57,7 @@
                 <h1>Kundvagn</h1>
                 <div class="simpleCart_items"></div>
                 <p class="grand_total_p">Grand Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></p>
-                <a href="shopping-cart.html"><button class="shopping_cart_mini_button">Till Kundvagn</button></a>
+                <a href="/cart/"><button class="shopping_cart_mini_button">Till Kundvagn</button></a>
             </div>
             <div class="f1f1f1-color-div" ></div>
             <main>
@@ -93,37 +93,37 @@
                                         </div>
                                         <div class="t_shirt_dam_merch">
                                             <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> T-shirt (Dam)</h3>
-                                            <a href="/product?id=1">
+                                            <a href="/product?id=5">
                                                 <img src="img/tshirt_dam_1.png" title="ITG T-Shirt (Dam)" />
                                             </a>
                                         </div>
                                         <div class="hoodie_herr_merch">
                                             <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Zip Hoodie (Herr)</h3>
-                                            <a href="/product?id=2">
+                                            <a href="/product?id=3">
                                                 <img src="img/zip_men.png" title="ITG Zip Hoodie" />
                                             </a>
                                         </div>
                                         <div class="hoodie_dam_merch">
                                             <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Zip Hoodie (Dam)</h3>
-                                            <a href="/product?id=3">
+                                            <a href="/product?id=4">
                                                 <img src="img/zip_dam_2_1.png" title="ITG Zip Hoodie (Dam)" />
                                             </a>
                                         </div>
                                         <div class="datorfodral_merch">
                                             <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Datorfodral</h3>
-                                            <a href="/product?id=4">
+                                            <a href="/product?id=1">
                                                 <img src="img/datorfodral_2_3.png" title="ITG Datorfodral" />
                                             </a>
                                         </div>
                                         <div class="penna_merch">
                                             <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Smart Penna</h3>
-                                            <a href="/product?id=5">
+                                            <a href="/product?id=6">
                                                 <img src="img/penna_shopen.png" title="ITG Smart Penna" />
                                             </a>
                                         </div>
                                         <div class="kollegieblock_merch">
                                             <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Kollegieblock</h3>
-                                            <a href="/product?id=6">
+                                            <a href="/product?id=2">
                                                 <img src="img/block_a5_1_.png" title="ITG Kollegieblock" />
                                             </a>
                                         </div>
@@ -162,8 +162,8 @@
                                 <p style="text-align: center;">
                                     E-post:
                                     <br>
-                                    <a href="mailto:info.headquarters@itgmarketplace.se" style="text-decoration: none; color:#fff;">
-                                    info.headquarters@itgmarketplace.se
+                                    <a href="mailto:info@itgmarket.se" style="text-decoration: none; color:#fff;">
+                                    info@itgmarket.se
                                     </a>
                                 </p>
                         </div>
@@ -190,22 +190,6 @@
                         <div class="copyright">
                             <p>© 2017 Felix Hörnfeldt - Emil Babayev - IT-Gymnasiet</p>
                         </div>
-                        <!--<div class="developer_">
-                            --<h2><a href="about.html">Om</a></h2>--
-                            <h2>Developed by:</h2>
-                            <div class="inside_developer">
-                                <div class="emil_">
-                                    <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-1/p240x240/20799441_1287027808093532_8691757969826870645_n.jpg?oh=b4cfa4aae78ad0c494b5963cefe86c81&oe=5A50AFA8" title="Emil Babayev" />
-                                    <br>
-                                    <p>Emil Babayev</p>
-                                </div>
-                                <div class="felix_">
-                                    <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-1/p240x240/21740048_1474078895975108_5526361180779581433_n.jpg?oh=ba6f50d7ab8d6f0847633684330bff38&oe=5A41C90A" title="Felix Hörnfeldt" />
-                                    <br>
-                                    <p>Felix Hörnfeldt</p>
-                                </div>
-                            </div>
-                        </div>-->
                     </div>
                 </div>
             </footer>
