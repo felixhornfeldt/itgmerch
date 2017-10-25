@@ -27,17 +27,8 @@
             <script src="{% static 'wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js' %}"></script>
             <script src="{% static 'wojodesign-simplecart-js-51a9a38/simpleCart.js' %}"></script>
             <script src="{% static 'main/main.js' %}"></script>
-
-            <!--<style>
-                @media screen and (max-width:350px) {
-                    .headline-text h1 {
-                        text-align: right;
-                        margin-right: 5%;
-                    }
-                }
-            </style>-->
         </head>
-        <body class="body" id="body">
+        <body>
              <header>
                 <div id="header">
                     <div id="top-header-div">
@@ -45,11 +36,11 @@
                             <div id="headline" class="headline">
                                 <div class="headline-img">
                                     <a class="img-bar-top-href" href="/">
-                                        <img title="Home" src="http://231077.net:8008/img/header_WLI_mini.png" class="img-head-top-bar" />
+                                        <img title="Home" src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit.png" class="img-head-top-bar" />
                                     </a>    
                                 </div>
                                 <div class="headline-text">
-                                    <h1><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> <a class="white">M</a>arket<a class="header-place-h1">place</a></h1>
+                                    <h1><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> <a class="white">M</a>arketplace</h1>
                                 </div>
                                 <div class="cart-button">
                                     <a href="/cart">
@@ -62,25 +53,25 @@
                 </div>
             </header>
             <div class="f1f1f1-color-div"></div>
-            <form action="javascript:;" method="POST"></form>
-            <main class="shopping_cart_main">
+            <form action="javascript:;" method="POST">
                 {% csrf_token %}
-                <div class="shopping_cart_content_shelf_checkout">
-                    <div class="shopping_cart_buttons shopping_cart_buttons_top">
-                        <a href="/"><button class="kepp_shopping_button">Fortsätt handla</button></a>
-                        <a href="javascript:;" class="simpleCart_empty"><button class="empty_shopping_cart">Töm Varukorgen</button></a>
-                    </div>
-                    <div class="simpleCart_items"></div>
-                    <div class="checkout">
-                        <p class="grand_total_p">Grand Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></p>
-                        <div class="shopping_cart_buttons shopping_cart_buttons_bottom">
+                <main class="shopping_cart_main">
+                    <div class="shopping_cart_content_shelf_checkout">
+                        <div class="shopping_cart_buttons">
                             <a href="/"><button class="kepp_shopping_button">Fortsätt handla</button></a>
                             <a href="javascript:;" class="simpleCart_empty"><button class="empty_shopping_cart">Töm Varukorgen</button></a>
-                            <a href="javascript:;" class="simpleCart_checkout simpleCart_empty"><input type="submit" class="checkout_button" value="Lägg beställning"/></a>
+                        </div>
+                        <div class="simpleCart_items"></div>
+                        <div class="checkout">
+                            <p class="grand_total_p">Grand Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span></p>
+                            <div class="shopping_cart_buttons">
+                                <a href="index.html"><button class="kepp_shopping_button">Fortsätt handla</button></a>
+                                <a href="javascript:;" class="simpleCart_empty"><button class="empty_shopping_cart">Töm Varukorgen</button></a>
+                                <a href="javascript:;" class="simpleCart_checkout simpleCart_empty"><input type="submit" class="checkout_button" value="Lägg beställning"/></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </main>
+                </main>
             </form>
             <div class="f1f1f1-color-div"></div>
             <footer>
@@ -89,7 +80,7 @@
                         <div class="footer-img-vertical">
                             <div class="img-vertikal-itg-href">
                                 <a href="http://it-gymnasiet.se/">
-                                    <img title="it-gymnasiet.se" src="http://231077.net:8008/img/itgymnasiet_logo_horizontal_.png" width="260px" height="18px" />
+                                    <img title="it-gymnasiet.se" src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itgymnasiet_logo_horizontal.png" width="260px" height="18px" />
                                 </a>
                             </div>
                         </div>
@@ -110,9 +101,7 @@
                                 <p style="text-align: center;">
                                     E-post:
                                     <br>
-                                    <a href="mailto:info@itgmarket.se" style="text-decoration: none; color:#fff;">
-                                    info@itgmarket.se
-                                    </a>
+                                    info.headquarters@itgmarketplace.se
                                 </p>
                         </div>
                         <div class="line-border-top"></div>

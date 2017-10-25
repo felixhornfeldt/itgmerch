@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Email</title>
+    <title>ITG Marketplace-order på väg!</title>
     <style>
         table {
             border-collapse: collapse;
@@ -19,11 +19,11 @@
     </style>
 </head>
 <body>
-    <img src="http://231077.net:8008/weloveit.jpg" alt="ITG Logo" />
+    <img src="http://231077.net:8008/img/weloveit.jpg" alt="ITG Logo" />
     <h1>Hej {{ name }}!</h1>
     <p>Din order är skapad, och du har blivit tilldelad ordernummer: <b>{{ order_number }}.</b><br>
         Du är välkommen att hämta ut ordern nästa arbetsdag hos Nina i cafét.<br>
-    Ange då de fyra sista siffrorna i ordernumret.</p>
+        Ange då de fyra sista siffrorna i ordernumret.</p>
     <p>Din order ser ut så här:</p>
     <p>
         <table>
@@ -36,7 +36,7 @@
         {% autoescape off %}{{ order }}{% endautoescape %}
         </table>
     </p>
-    <p>Med kamratliga hälsningar, <br>ITG Marketplace</p>
+    <p>Med vänliga hälsningar, <br><b>ITG Marketplace</b></p>
     <p>Observera att mejlet är automatiskt genererat, dock kan du svara på detta mejl om några frågor uppstår.</p>
 </body>
 </html>

@@ -15,11 +15,13 @@ def success(request):
         usr_email = request.session['email']
         name = request.session['name']
         order_text = request.session['order']
+        # total = request.session['total']
+
         if re.match('^[\w!#$%&*+\/=?^`{|}~-]+(?:\.[\w!#$%&*+\/=?`{|}~-]+)*@+(?:itggot\.se)$', usr_email):
             # Add order to database
             order_n = add_order(name, usr_email, order_text)
             # Send an email
-            email(usr_email, name, order_n, order_text)
+            email(usr_email, name, order_n, order_text, total)
             # Flush session to prevent reordering by reloading
             request.session.flush()
 
@@ -41,10 +43,13 @@ def index(request):
     # Get order, add to session
     if request.method == "POST":
         order_dict = request.POST
+        # total = order_dict['total']
         if order_dict['itemCount'] == '0':
             return HttpResponseRedirect('/')
 
+        # request.session['total'] = total
         request.session['order'] = order_dict
+
     return HttpResponseRedirect("/soc/login/google-oauth2/?next=/order/review")
 
 

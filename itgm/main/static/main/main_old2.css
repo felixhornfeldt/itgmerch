@@ -406,6 +406,53 @@ footer p {
     height: auto;
 }
 
+/*.developer_ {
+    justify-content: center;
+    text-align: center;
+}
+
+.developer_ img {
+    width: 150px;
+    height: auto;
+}
+
+.developer_ h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    color: #fff;
+}
+
+.developer_ h2 a {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.developer_ h2 a:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.developer_ p {
+    font-size: 20px;
+}
+
+.inside_developer {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+
+.inside_developer .emil_ {
+    margin-right: 10px;
+}
+
+.inside_developer .felix_ {
+    margin-left: 10px;
+}*/
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 

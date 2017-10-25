@@ -7,7 +7,8 @@ simpleCart({
         // an option list of extra name/value pairs that can
         // be sent along with the checkout data
         extra_data: {
-          order: 'Oops'
+          order: 'If somebody intercepts this, well done you!',
+          total: document.getElementById('simpleCart_grandTotal').value
         }
     }
 });
