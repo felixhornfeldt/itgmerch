@@ -97,9 +97,9 @@
 						{ attr: "name", label: "Produkt" },
 						{ attr: "price", label: "Pris", view: 'currency' },
 						{ attr: "size", label: "Storlek"},
-						{ attr: "quantity", label: "Antal", view: "input" },
+						{ attr: "quantity", label: "Antal", view: "input"},
 						{ attr: "total", label: "Total", view: 'currency' },
-						{ view: "remove", text: "X", label: false }
+						{ view: "remove", text: "Ta bort", label: false }
 					],
 
 					excludeFromCheckout	: ['thumb'],
@@ -592,7 +592,7 @@
 				},
 
 				remove: function (item, column) {
-					return "<a href='javascript:;' title='Är du säker?' class='" + namespace + "_remove'>" + (column.text || "X") + "</a>";
+					return "<a href='javascript:;' class='" + namespace + "_remove'>" + (column.text || "X") + "</a>";
 				}
 			};
 

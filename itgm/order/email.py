@@ -6,7 +6,7 @@ from .models import Order
 from_email = settings.EMAIL_HOST_USER
 
 
-def email(usr_email, name, order_number, order, total):
+def email(usr_email, name, order_number, order):
     to_email = [from_email, usr_email]
     order_text = ""
 

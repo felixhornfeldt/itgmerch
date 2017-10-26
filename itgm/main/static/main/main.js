@@ -8,7 +8,7 @@ simpleCart({
         // be sent along with the checkout data
         extra_data: {
           order: 'If somebody intercepts this, well done you!',
-          total: document.getElementById('simpleCart_grandTotal').value
+          // total: document.getElementById('simpleCart_grandTotal').value
         }
     }
 });

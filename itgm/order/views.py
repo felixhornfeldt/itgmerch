@@ -21,7 +21,7 @@ def success(request):
             # Add order to database
             order_n = add_order(name, usr_email, order_text)
             # Send an email
-            email(usr_email, name, order_n, order_text, total)
+            email(usr_email, name, order_n, order_text)
             # Flush session to prevent reordering by reloading
             request.session.flush()
 
