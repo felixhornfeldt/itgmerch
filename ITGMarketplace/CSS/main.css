@@ -425,8 +425,10 @@ footer p {
 }
 
 .info-img img {
-    width: 650px;
-    height: 650px;
+    max-width: 650px;
+    max-height: 650px;
+    width: auto;
+    height: auto;
     position: relative;
     margin-right: 25px;
 }
@@ -702,8 +704,8 @@ i.fa-cart-arrow-down:hover {
     }
     
     .info-img img {
-        width: 525px;
-        height: 525px;
+        max-width: 525px;
+        max-height: 525px;
     }
     
     .info-txt {
@@ -763,8 +765,8 @@ i.fa-cart-arrow-down:hover {
 
 @media screen and (max-width: 1024px) {
     .info-img img {
-        width: 550px;
-        height: 550px;
+        max-width: 550px;
+        max-height: 550px;
     }
 
     .header-place-h1 {
@@ -811,8 +813,8 @@ i.fa-cart-arrow-down:hover {
 
 @media screen and (max-width:500px) {
     .info-img img {
-        width: 400px;
-        height: 400px;
+        max-width: 400px;
+        max-height: 400px;
     }
 
     .img-bar-top-href img {
