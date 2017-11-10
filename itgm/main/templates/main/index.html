@@ -85,7 +85,7 @@
                             <div id="the-merch-container-field">
                                 <div class="merch-container">
                                     <div class="merch">
-                                        <div class="t_shirt_herr_merch">
+                                        <!--<div class="t_shirt_herr_merch">
                                             <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> T-shirt (Herr)</h3>
                                             <a href="/product?id=0">
                                                 <img src="http://231077.net:8008/img/itg_tshirt.png" title="ITG T-Shirt" />
@@ -109,12 +109,12 @@
                                                 <img src="http://231077.net:8008/img/zip_dam_2_1.png" title="ITG Zip Hoodie (Dam)" />
                                             </a>
                                         </div>
-                                        <!--<div class="datorfodral_merch">
+                                        <div class="datorfodral_merch">
                                             <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Datorfodral</h3>
                                             <a href="/product?id=1">
                                                 <img src="http://231077.net:8008/img/datorfodral_2_3.png" title="ITG Datorfodral" />
                                             </a>
-                                        </div>-->
+                                        </div>
                                         <div class="penna_merch">
                                             <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> Smart Penna</h3>
                                             <a href="/product?id=6">
@@ -126,7 +126,17 @@
                                             <a href="/product?id=2">
                                                 <img src="http://231077.net:8008/img/block_a5_1_.png" title="ITG Kollegieblock" />
                                             </a>
+                                        </div>--> <!-- Bortkommenterat pga effektivare lösning mha Python -->
+
+                                        {% for item in items %}
+                                        <div class="t_shirt_herr_merch">
+                                            <h3 id="h3-show"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> {{ item.name }}</h3>
+                                            <a href="/product?id={{ item.id_n }}">
+                                                <img src="{{ item.thumbnail }}" title="{{ item.name }}" />
+                                            </a>
                                         </div>
+                                        {% endfor %}
+
                                     </div>
                                 </div>
                             </div>

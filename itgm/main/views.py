@@ -7,8 +7,13 @@ cart_url = 'cart'
 
 
 def index(request):
+    items = Product.objects.all()
+    # for item in items:
+    #    print(item.name)
+
     context = {
-        'cart_url': cart_url
+        'cart_url': cart_url,
+        'items': items
     }
     return render(request, 'main/index.html', context=context)
 
