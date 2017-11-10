@@ -8,8 +8,6 @@ cart_url = 'cart'
 
 def index(request):
     items = Product.objects.all()
-    # for item in items:
-    #    print(item.name)
 
     context = {
         'cart_url': cart_url,
@@ -45,4 +43,3 @@ def cart(request):
     else:
         return render(request, 'main/cart.html')
 
-# END OF CODE
