@@ -889,7 +889,7 @@ i.fa-cart-arrow-down:hover {
     .checkout_button, 
     .kepp_shopping_button, 
     .empty_shopping_cart {
-        font-size: 14px;
+        font-size: 12px;
         margin: 0;
         width: auto;
     }
@@ -943,6 +943,10 @@ i.fa-cart-arrow-down:hover {
     
     i.fa-cart-arrow-down {
         font-size: 40px;
+    }
+
+    .empty_shopping_cart {
+        display: none;
     }
 }
 
@@ -1022,14 +1026,8 @@ i.fa-cart-arrow-down:hover {
 
     .shopping_cart_mini .simpleCart_items table tbody td img,
     .shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove,
-    .simpleCart_items table tbody td img,
-    .empty_shopping_cart  {
+    .simpleCart_items table tbody td img  {
         display: none;
-    }
-
-    .checkout_button, 
-    .kepp_shopping_button {
-        font-size: 12px;
     }
 
     .shopping_cart_main {
