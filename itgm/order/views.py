@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse, HttpResponseRedirect
 from django.conf import settings
-from .email import email
+from .email import email, delivery_email
 import re
 from .add_order import add_order
 from django.views.decorators.csrf import csrf_exempt
-
+from .models import Order
+from django.contrib.auth import authenticate, login as auth_login
+from django.contrib.auth.decorators import login_required
+from .forms import LoginForm
 
 def success(request):
     if request.method == "GET":
@@ -35,7 +38,7 @@ def rdr(request):
         request.session['email'] = request.GET.get('email', 'example@example.com')
         request.session['name'] = request.GET.get('name', 'John Doe')
 
-        return HttpResponseRedirect('review')
+    return HttpResponseRedirect('review')
 
 
 @csrf_exempt
@@ -72,3 +75,49 @@ def review(request):
         email = request.session['email']
         name = request.session['name']
         return render(request, 'order/review.html', {'name': name, 'email': email})
+
+
+@login_required(login_url='/order/login/')
+def manage(request):
+    if request.method == "POST":
+
+        for order in Order.objects.all():
+            order.orderDelivered = False
+            order.save()
+
+        for item in request.POST:
+            if item != "csrfmiddlewaretoken":
+                item = Order.objects.get(order_number=item)
+                item.orderDelivered = True
+                item.save()
+
+    for order in Order.objects.all():
+        if order.is_mail_sent is False and order.orderDelivered is True:
+            delivery_email(order.email, order.name, order.order_number, order.date_time)
+            order.is_mail_sent = True
+            order.save()
+
+    return render(request, 'order/manage.html', {'orders': Order.objects.all(), 'id': "embas"})
+
+
+def login(request):
+    if request.method == "POST":
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = request.POST['username']
+            password = request.POST['password']
+            user = authenticate(request, username=username, password=password)
+
+        if user is not None:
+            auth_login(request, user)
+            # Redirect to a success page.
+            ...
+            return HttpResponseRedirect('/order/manage/')
+        else:
+            # Return an 'invalid login' error message.
+            ...
+
+            return HttpResponseRedirect('/order/login/')
+    else:
+        form = LoginForm()
+        return render(request, 'order/login.html', {'form': form})

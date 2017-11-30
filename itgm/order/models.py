@@ -10,6 +10,8 @@ class Order(models.Model):
     order_number = models.IntegerField()
     order = models.TextField(max_length=1000)
     date_time = models.DateTimeField(default=datetime.now())
+    orderDelivered = models.BooleanField(default=False)
+    is_mail_sent = models.BooleanField(default=False)
 
     def __str__(self):
         x = self.email + ' ' + str(self.date_time)

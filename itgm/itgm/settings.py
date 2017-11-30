@@ -131,12 +131,12 @@ STATIC_URL = '/static/'
 
 # Email settings
 
-EMAIL_HOST = "itgmarket.se"
-EMAIL_PORT = 25
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = "support@itgmarket.se"
-EMAIL_HOST_PASSWORD = "justtothrowitaway"
+EMAIL_HOST_USER = "test.itgmarket@gmail.com"
+EMAIL_HOST_PASSWORD = "bmBXTamwuVsZZqH3SRyc"
 
 # Social auth stuff
 
