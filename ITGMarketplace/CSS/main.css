@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -15,15 +15,15 @@ a {
 }
 
 .blue {
-    color: #1E90FF;
+    color: #009cdd;
 }
 
 .pink {
-    color: #FF1493;
+    color: #eb0088;
 }
 
 .orange {
-    color: #FF8C00;
+    color: #f6932c;
 }
 
 .f1f1f1-color-div {
@@ -71,7 +71,7 @@ i.fa {
     /*background-color: #000;*/
     height: 120px;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 80px;
     font-style: normal;
     justify-content: center;
@@ -101,7 +101,7 @@ i.fa-cart-plus {
 }
 
 i.fa-cart-plus:hover {
-    background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
+    background: linear-gradient(#009cdd, #eb0088, #f6932c);
 }
 
 /* Shopping cart mini display */
@@ -114,7 +114,7 @@ i.fa-cart-plus:hover {
     right: 1%;
     background-color: #fff;
     padding: 5px;
-    border: 3px solid #1E90FF;
+    border: 3px solid #009cdd;
     max-width: 100%;
     z-index: 99;
 }
@@ -140,7 +140,7 @@ i.fa-cart-plus:hover {
     margin: 0;
     margin-bottom: 5px;
     border: 0;
-    border-bottom: 2px solid #FF1493;
+    border-bottom: 2px solid #eb0088;
     font-size: 40px;
 }
  
@@ -183,7 +183,7 @@ i.fa-cart-plus:hover {
 
 .shopping_cart_mini button {
     background-color: #000;
-    border: 3px solid #FF8C00;
+    border: 3px solid #f6932c;
     width: 100%;
     padding: 5px 0;
     margin-top: 10px;
@@ -223,7 +223,7 @@ i.fa-cart-plus:hover {
     padding: 25px;
     height: 229px;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: white;
     text-align: left;
 }
@@ -243,15 +243,15 @@ i.fa-cart-plus:hover {
 }
 
 .blue-txt-plac  {
-    background-color: #1E90FF;
+    background-color: #009cdd;
 }
 
 .pink-txt-plac  {
-    background-color: #FF1493;
+    background-color: #eb0088;
 }
 
 .orange-txt-plac  {
-    background-color: #FF8C00;
+    background-color: #f6932c;
 }
 
 .first-img-middle-plac {
@@ -283,7 +283,7 @@ i.fa-cart-plus:hover {
 
 .merch img:hover {
     cursor: pointer;
-    background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
+    background: linear-gradient(#009cdd, #eb0088, #f6932c);
     /*border-radius: 20%;*/
 }
 
@@ -307,7 +307,7 @@ i.fa-cart-plus:hover {
     color: white;
     text-align: center;
     justify-content: center;
-    font-family: "Open Sans","Tahoma",sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .footer-inforamtion h2 {
@@ -594,17 +594,17 @@ i.fa-cart-arrow-down:hover {
 
 .kepp_shopping_button {
     float: left;
-    border: 2px solid #1E90FF;
+    border: 2px solid #009cdd;
 }
 
 .empty_shopping_cart {
-    border: 2px solid #FF1493;
+    border: 2px solid #eb0088;
     margin-left: 10px;
 }
 
 .checkout_button {
     float: right;
-    border: 2px solid #FF8C00;
+    border: 2px solid #f6932c;
 }
 
 
@@ -638,7 +638,7 @@ i.fa-cart-arrow-down:hover {
 }
 
 .about_img_plus img {
-    border: 2px solid #FF1493;
+    border: 2px solid #eb0088;
     width: auto;
 }
 
