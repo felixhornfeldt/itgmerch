@@ -9,5 +9,6 @@ urlpatterns = [
     url(r'^review', views.review, name='review'),
     url(r'^rdr', views.rdr, name='rdr'),
     url(r'^manage', views.manage, name='manage'),
-    url(r'^login', views.login, name='login')
+    url(r'^login', views.login, name='login'),
+    url(r'^logout', views.log_out, name='logout')
 ]

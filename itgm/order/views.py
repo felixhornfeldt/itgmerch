@@ -6,7 +6,7 @@ import re
 from .add_order import add_order
 from django.views.decorators.csrf import csrf_exempt
 from .models import Order
-from django.contrib.auth import authenticate, login as auth_login
+from django.contrib.auth import authenticate, logout, login as auth_login
 from django.contrib.auth.decorators import login_required
 from .forms import LoginForm
 
@@ -100,6 +100,11 @@ def manage(request):
     return render(request, 'order/manage.html', {'orders': Order.objects.all(), 'id': "embas"})
 
 
+def log_out(request):
+    logout(request)
+    return HttpResponseRedirect('/order/login/')
+
+
 def login(request):
     if request.method == "POST":
         form = LoginForm(request.POST)
@@ -111,11 +116,9 @@ def login(request):
         if user is not None:
             auth_login(request, user)
             # Redirect to a success page.
-            ...
             return HttpResponseRedirect('/order/manage/')
         else:
             # Return an 'invalid login' error message.
-            ...
 
             return HttpResponseRedirect('/order/login/')
     else:
