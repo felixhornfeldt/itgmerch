@@ -366,17 +366,17 @@ footer p {
 }
 
 .fa-instagram:hover {
-    background-color: dodgerblue;
+    background-color: #009cdd;
     color: #fff;
 }
 
 .fa-facebook:hover {
-    background-color: deeppink;
+    background-color: #eb0088;
     color: #fff;
 }
 
 .fa-twitter:hover {
-    background-color: darkorange;
+    background-color: #f6932c;
     color: #fff;
 }
 
