@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nina's orders</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: auto;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>i solemnly swear that i am up to no good</h1>
+    <form action="/order/manage/" method="post">
+        {% csrf_token %}
+        <table>
+        <tr>
+            <th>Ordernummer</th>
+            <th>Namn</th>
+            <th>Tid/datum</th>
+            <th>Ordern redo</th>
+        </tr>
+        {% for order in orders %}
+        <tr>
+            <td>{{ order.order_number }}</td>
+            <td>{{ order.name }}</td>
+            <td>{{ order.date_time }}</td>
+            <td><input id="box" type="checkbox" value="True" name="{{ order.order_number }}" {% if order.orderDelivered %} checked {% endif %} /></td>
+        </tr>
+        {% endfor %}
+        </table>
+
+        <p><input type="submit" value="Mischief managed"></p>
+    </form>
+
+
+</body>
+</html>

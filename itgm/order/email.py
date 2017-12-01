@@ -30,3 +30,26 @@ def email(usr_email, name, order_number, order):
         fail_silently=False,
         html_message=msg_html,
         )
+
+
+def delivery_email(usr_email, name, order_number, date):
+    to_email = [usr_email]
+    fourlast = int(str(order_number)[12:16])
+
+    msg_plain = "Your order is ready for pick up. {} {} {}".format(usr_email, name, order_number)
+    msg_html = render_to_string('order/email_delivery.html', {
+        'name': name,
+        'order_number': order_number,
+        'usr_email': usr_email,
+        'fourlast': fourlast,
+        'date': date
+    })
+
+    send_mail(
+        'ITG Marketplace order #{}'.format(order_number),
+        msg_plain,
+        from_email,
+        to_email,
+        fail_silently=False,
+        html_message=msg_html,
+    )
