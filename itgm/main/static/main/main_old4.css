@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -15,15 +15,15 @@ a {
 }
 
 .blue {
-    color: #009cdd;
+    color: #1E90FF;
 }
 
 .pink {
-    color: #eb0088;
+    color: #FF1493;
 }
 
 .orange {
-    color: #f6932c;
+    color: #FF8C00;
 }
 
 .f1f1f1-color-div {
@@ -71,7 +71,7 @@ i.fa {
     /*background-color: #000;*/
     height: 120px;
     color: #fff;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 80px;
     font-style: normal;
     justify-content: center;
@@ -101,7 +101,7 @@ i.fa-cart-plus {
 }
 
 i.fa-cart-plus:hover {
-    background: linear-gradient(#009cdd, #eb0088, #f6932c);
+    background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
 }
 
 /* Shopping cart mini display */
@@ -114,7 +114,7 @@ i.fa-cart-plus:hover {
     right: 1%;
     background-color: #fff;
     padding: 5px;
-    border: 3px solid #009cdd;
+    border: 3px solid #1E90FF;
     max-width: 100%;
     z-index: 99;
 }
@@ -140,7 +140,7 @@ i.fa-cart-plus:hover {
     margin: 0;
     margin-bottom: 5px;
     border: 0;
-    border-bottom: 2px solid #eb0088;
+    border-bottom: 2px solid #FF1493;
     font-size: 40px;
 }
  
@@ -183,7 +183,7 @@ i.fa-cart-plus:hover {
 
 .shopping_cart_mini button {
     background-color: #000;
-    border: 3px solid #f6932c;
+    border: 3px solid #FF8C00;
     width: 100%;
     padding: 5px 0;
     margin-top: 10px;
@@ -223,7 +223,7 @@ i.fa-cart-plus:hover {
     padding: 25px;
     height: 229px;
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     text-align: left;
 }
@@ -243,15 +243,15 @@ i.fa-cart-plus:hover {
 }
 
 .blue-txt-plac  {
-    background-color: #009cdd;
+    background-color: #1E90FF;
 }
 
 .pink-txt-plac  {
-    background-color: #eb0088;
+    background-color: #FF1493;
 }
 
 .orange-txt-plac  {
-    background-color: #f6932c;
+    background-color: #FF8C00;
 }
 
 .first-img-middle-plac {
@@ -283,7 +283,7 @@ i.fa-cart-plus:hover {
 
 .merch img:hover {
     cursor: pointer;
-    background: linear-gradient(#009cdd, #eb0088, #f6932c);
+    background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
     /*border-radius: 20%;*/
 }
 
@@ -307,7 +307,7 @@ i.fa-cart-plus:hover {
     color: white;
     text-align: center;
     justify-content: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans","Tahoma",sans-serif;
 }
 
 .footer-inforamtion h2 {
@@ -366,17 +366,17 @@ footer p {
 }
 
 .fa-instagram:hover {
-    background-color: #009cdd;
+    background-color: dodgerblue;
     color: #fff;
 }
 
 .fa-facebook:hover {
-    background-color: #eb0088;
+    background-color: deeppink;
     color: #fff;
 }
 
 .fa-twitter:hover {
-    background-color: #f6932c;
+    background-color: darkorange;
     color: #fff;
 }
 
@@ -594,17 +594,17 @@ i.fa-cart-arrow-down:hover {
 
 .kepp_shopping_button {
     float: left;
-    border: 2px solid #009cdd;
+    border: 2px solid #1E90FF;
 }
 
 .empty_shopping_cart {
-    border: 2px solid #eb0088;
+    border: 2px solid #FF1493;
     margin-left: 10px;
 }
 
 .checkout_button {
     float: right;
-    border: 2px solid #f6932c;
+    border: 2px solid #FF8C00;
 }
 
 
@@ -638,7 +638,7 @@ i.fa-cart-arrow-down:hover {
 }
 
 .about_img_plus img {
-    border: 2px solid #eb0088;
+    border: 2px solid #FF1493;
     width: auto;
 }
 
@@ -889,7 +889,7 @@ i.fa-cart-arrow-down:hover {
     .checkout_button, 
     .kepp_shopping_button, 
     .empty_shopping_cart {
-        font-size: 12px;
+        font-size: 14px;
         margin: 0;
         width: auto;
     }
@@ -943,10 +943,6 @@ i.fa-cart-arrow-down:hover {
     
     i.fa-cart-arrow-down {
         font-size: 40px;
-    }
-
-    .empty_shopping_cart {
-        display: none;
     }
 }
 
@@ -1026,8 +1022,14 @@ i.fa-cart-arrow-down:hover {
 
     .shopping_cart_mini .simpleCart_items table tbody td img,
     .shopping_cart_mini .simpleCart_items table tbody td .simpleCart_remove,
-    .simpleCart_items table tbody td img  {
+    .simpleCart_items table tbody td img,
+    .empty_shopping_cart  {
         display: none;
+    }
+
+    .checkout_button, 
+    .kepp_shopping_button {
+        font-size: 12px;
     }
 
     .shopping_cart_main {

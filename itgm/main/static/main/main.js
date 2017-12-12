@@ -1,7 +1,7 @@
 simpleCart({
     checkout: {
         type: "SendForm" ,
-        url: "/order/" ,
+        url: "/order/order/" ,
         // http method for form, "POST" or "GET", default is "POST"
         method: "POST" ,
         // an option list of extra name/value pairs that can

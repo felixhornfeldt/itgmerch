@@ -29,6 +29,9 @@
                 </td>
             </tr>
         </table>
+        <table>
+            {% autoescape off %}{{ order_text }}{% endautoescape %}
+        </table>
             <p>
                 <form action="success">
                     <button type="submit" value="Confirm">Godkänn</button>
