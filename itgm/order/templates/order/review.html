@@ -29,9 +29,19 @@
                 </td>
             </tr>
         </table>
-        <table>
-            {% autoescape off %}{{ order_text }}{% endautoescape %}
+        <p><h3>Din beställning</h3>
+            <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Antal</th>
+                    <th>Storlek</th>
+                    <th>Pris per styck (kr)</th>
+                </tr>
+        {% autoescape off %}{{ order_text }}{% endautoescape %}
         </table>
+        </p>
+
+
             <p>
                 <form action="success">
                     <button type="submit" value="Confirm">Godkänn</button>
