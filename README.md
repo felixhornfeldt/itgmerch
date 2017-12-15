@@ -8,10 +8,7 @@ Set to launch in the end of October.
 Selling merch for IT-Gymnasiet Göteborg.
 
 ### TODO - server side
-+ Integrate shopping cart into order system.
 + Decide whether static content or cdn for images
 
 ### TODO - front-end
-+ Felix - add your todos here.
-+ Lär dig förstå client-server achitecture
-+ Learn GET/POST
+
