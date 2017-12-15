@@ -4,25 +4,25 @@
             {% load static %}
             <!--Fonts-->
             <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Droid+Sans:400,700|Noto+Sans:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Space+Mono:400,400i,700,700i" rel="stylesheet" />
-            
+
             <!--CSS Stylesheets-->
             <link rel="stylesheet" type="text/css" href="{% static 'main/main.css' %}" />
-            
+
             <!--scale and charset-->
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-            
+
             <!--Title of page-->
             <title>ITG Market</title>
-            
+
             <!--Icon Head-->
             <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-32x32.png" sizes="32x32" />
             <link rel="icon" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-192x192.png" sizes="192x192" />
             <link rel="apple-touch-icon-precomposed" href="http://it-gymnasiet.se/wp-content/uploads/2017/05/cropped-itg-favicon-512x512-180x180.png" />
-            
+
             <!-- Icon library FB TW IG etc. -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-             
+
             <!-- JS Code -->
             <script src="{% static 'wojodesign-simplecart-js-51a9a38/test/inc/jquery.1.6.1.min.js' %}"></script>
             <script src="{% static 'wojodesign-simplecart-js-51a9a38/simpleCart.js' %}"></script>
@@ -37,7 +37,7 @@
                                 <div class="headline-img">
                                     <a class="img-bar-top-href" href="/">
                                         <img title="Home" src="http://it-gymnasiet.se/wp-content/themes/itgymnasiet2017/img/itg_weloveit.png" class="img-head-top-bar" />
-                                    </a>    
+                                    </a>
                                 </div>
                                 <div class="headline-text">
                                     <h1><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> <a class="white">M</a>arketplace</h1>
@@ -71,7 +71,7 @@
                                 <h2 class="item_name"><a class="blue">I</a><a class="pink">T</a><a class="orange">G</a> {{ product.name }}</h2>
                                     <p>{{ product.description }}</p>
                                 <div class="info_price">
-                                    <p class="item_price">Pris: SEK {{ product.price }}</p>
+                                    <p class="item_price">Pris: {{ product.price }} kr</p>
                                 </div>
                                 <div class="size">
                                     <p>Storlek:</p>
@@ -86,7 +86,7 @@
                                             <option value="L">L</option>
                                             <option value="XL">XL</option> -->
                                     </select>
-                                </div>    
+                                </div>
                                 <div class="buy-button">
                                     <a href="{{ cart_url }}">
                                         <i class="fa fa-cart-arrow-down item_add">
@@ -111,7 +111,7 @@
                         </div>
                         <div class="footer-inforamtion">
                             <h2>Headquarters - ITG Göteborg</h2>
-                                <p style="text-align: center;"> 
+                                <p style="text-align: center;">
                                     Besökadress:
                                     <br>
                                     Origovägen 4
