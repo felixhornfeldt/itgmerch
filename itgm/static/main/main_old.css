@@ -1,0 +1,908 @@
+/* For all, body, html etc CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    background-color: transparent;
+    transition: all .5s ease;
+}
+
+.blue {
+    color: #1E90FF;
+}
+
+.pink {
+    color: #FF1493;
+}
+
+.orange {
+    color: #FF8C00;
+}
+
+.f1f1f1-color-div {
+    background-color: #f1f1f1;
+    height: 70px;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+p {
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+i.fa {
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.095);
+    width: 4rem;
+    text-align: center;
+    height: 3rem;
+    padding-top: 1rem;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+/* Header CSS */
+
+
+.headline-text h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #000;
+    height: 120px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80px;
+    font-style: italic;
+    justify-content: center;
+}
+
+.img-bar-top-href img {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    z-index: 99;
+    width: 130px;
+    height: 130px;
+}
+
+.img-bar-top-href:hover {
+    opacity: 0.8;
+}
+
+i.fa-cart-plus {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    cursor: pointer;
+    font-size: 3rem;
+    width: 5rem;
+    height: 4rem;
+}
+
+i.fa-cart-plus:hover {
+    background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
+}
+
+.shopping_cart_mini {
+    width: 500px;
+    height: auto;
+    margin-top: 1%;
+    position: absolute;
+    right: 1%;
+    background-color: #fff;
+    padding: 5px;
+    border: 3px solid #1E90FF;
+    max-width: 100%;
+}
+
+.shopping_cart_mini .remove_div_mini {
+    text-decoration: none;
+    color: #FF0000;
+    font-weight: 900;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.shopping_cart_mini h1 {
+    color: #000;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    border: 0;
+    border-bottom: 2px solid #FF1493;
+    font-size: 32px;
+}
+ 
+.shopping_cart_mini .simpleCart_items table tbody td img {
+    width: 50px;
+    height: auto;
+}
+
+.shopping_cart_mini .simpleCart_items table thead th {
+    font-size: 18px;
+    width: 10%;
+}
+
+.shopping_cart_mini .simpleCart_items table tbody td,
+.shopping_cart_mini .simpleCart_items table tbody td a {
+    font-size: 12px;
+    color: #000;
+}
+
+.shopping_cart_mini .simpleCart_items table tbody td a:hover {
+    padding: 5px;
+}
+
+.shopping_cart_mini .simpleCart_items table tbody td input {
+    width: 50%;
+}
+
+.shopping_cart_mini .grand_total_p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-size: 16px;
+}
+
+.shopping_cart_mini button {
+    background-color: #000;
+    border: 3px solid #FF8C00;
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.shopping_cart_mini button:hover {
+    opacity: 0.7;
+}
+
+.shopping_cart_mini a button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+/* Middle CSS */
+
+
+#middle-main-out-plac {
+    background-color: #000;
+}
+
+#middle-plac-in {
+    padding: 25px;
+}
+
+.middle-img-plac-txt p {
+    width: 250px;
+    padding: 25px;
+    text-align: left;
+    color: white;
+    height: 229px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    font-size: 18px;
+}
+
+.blue-txt-plac p {
+    background-color: #1E90FF;
+}
+
+.pink-txt-plac p {
+    background-color: #FF1493;
+}
+
+.orange-txt-plac p {
+    background-color: #FF8C00;
+}
+
+.middle-img-plac-txt {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap; 
+    /*justify-content: center;*/
+}
+
+.first-img-middle-plac {
+    position: relative;
+}
+
+.img-elevkar-itg:hover {
+    opacity: 0.8;
+}
+
+
+/* Merch */
+
+
+.merch {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.095);
+    /*background-color: #fff;*/
+}
+
+.merch img {
+    width: 265px;
+    height: 285px;
+    padding: 20px;
+    margin-top: 5px;
+    justify-content: center;
+    border-radius: 20%;
+}
+
+.merch img:hover {
+    cursor: pointer;
+    background: linear-gradient(#1E90FF, #FF1493, #FF8C00);
+    /*border-radius: 20%;*/
+}
+
+#p-show {
+    text-align: center;
+    vertical-align: baseline;
+    font-size: 28px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    padding: 0;
+    border: 0;
+    font-weight: 100;
+    /*color: #000;*/
+}
+
+
+/* Footer CSS */
+
+
+.footer-inforamtion {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: "Open Sans","Tahoma",sans-serif;
+}
+
+.footer-inforamtion h2 {
+    font-size: 1.375rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: uppercase;
+    display: block;
+}
+
+.footer-inforamtion p {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    margin-top: 0;
+    text-rendering: auto;
+    display: block;
+    box-sizing: inherit;
+}
+
+.img-vertikal-itg-href {
+    text-align: center;
+    justify-content: center;
+    display: block; 
+    position: relative;
+    margin: 2rem 0;
+    max-width: 100%;
+}
+
+.img-vertikal-itg-href:hover {
+    opacity: 0.8;
+}
+
+.line-border-top {
+    border-top: 2px solid rgba(255, 255, 255, 0.095);
+}
+
+.social-media {
+    display:flex !important;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+footer p {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    line-height: 1.4;
+}
+
+.fa-instagram:hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.fa-facebook:hover {
+    background-color: deeppink;
+    color: #fff;
+}
+
+.fa-twitter:hover {
+    background-color: darkorange;
+    color: #fff;
+}
+
+.fb-ig-imgs-li {
+    margin: auto;
+    display: block;
+    flex: 1 0 auto !important;
+}
+
+.social-media li {
+    list-style: none;
+    display: block;
+    margin: 1rem;
+}
+
+.footer-div-content {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer-div {
+    background-color: #000;
+    margin: 0;
+    padding: 1.5rem;
+    border: 0;
+    height: auto;
+}
+
+.developer_ {
+    justify-content: center;
+    text-align: center;
+}
+
+.developer_ img {
+    width: 150px;
+    height: auto;
+}
+
+.developer_ h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    color: #fff;
+}
+
+.developer_ h2 a {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.developer_ h2 a:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.developer_ p {
+    font-size: 20px;
+}
+
+.inside_developer {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+
+.inside_developer .emil_ {
+    margin-right: 10px;
+}
+
+.inside_developer .felix_ {
+    margin-left: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Targaryen Stark Lannister CSS (test-html also) produkt template*/
+
+
+#information-about-merch {
+    padding: 25px;
+}
+
+.simpleCart_shelfItem {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.info-img img {
+    width: 650px;
+    height: 650px;
+    position: relative;
+    margin-right: 25px;
+}
+
+.info-txt {
+    width: 885px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.info-txt h2 {
+    font-size: 80px;
+    margin-top: 0.5rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    line-height: 1.3;
+    text-transform: uppercase;
+    display: block;
+    color: #000;
+}
+
+.info-txt p {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    line-height: 1.4;
+    text-rendering: auto;
+    display: block;
+    box-sizing: inherit;
+    color: #000;
+}
+
+i.fa-cart-arrow-down {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 70px;
+}
+
+i.fa-cart-arrow-down:hover {
+    opacity: 0.7;
+}
+
+.size p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.size select, .size option {
+    font-size: 20px;
+    text-align: left;
+}
+
+.size select {
+    margin-bottom: 1.5rem;
+}
+
+.info_price p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Shopping-Cart CSS */
+
+.shopping_cart_main {
+    min-height: 300px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.shopping_cart_content_shelf_checkout {
+    width: 100%;
+}
+
+.simpleCart_items table{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex: wrap;
+}
+
+.simpleCart_items table thead th {
+    font-size: 40px;
+    border-bottom: 2px solid #000;
+}
+
+.simpleCart_items table tbody td {
+    padding-top: 10px;
+}    
+
+.simpleCart_items table tbody td a {
+    text-decoration: none;
+    color: #000;
+}
+
+.simpleCart_items table tbody td a:hover {
+    background-color: #FF0000;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.simpleCart_items table tbody td input {
+    width: 25%;
+    text-align: center;
+}
+
+.simpleCart_items table img {
+    width: 100px;
+    height: auto;
+    padding: 5px 0;
+}
+
+.grand_total_p {
+    color: #000;
+    text-align: right;
+    border-bottom: 1px solid #b6b6b6;
+    border-top: 1px solid #B6B6B6;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.grand_total_p span {
+    font-weight: normal;
+}
+
+.shopping_cart_buttons {
+    min-height: 45px;
+}
+
+.shopping_cart_buttons button:hover {
+    opacity: 0.7;
+}
+
+.checkout_button, 
+.kepp_shopping_button, 
+.empty_shopping_cart {
+    color: #fff;
+    width: auto;
+    background-color: #000;
+    font-size: 18px;
+    padding: 5px 25px;
+    margin: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.kepp_shopping_button {
+    float: left;
+    border: 2px solid #1E90FF;
+}
+
+.empty_shopping_cart {
+    border: 2px solid #FF1493;
+    margin-left: 10px;
+}
+
+.checkout_button {
+    float: right;
+    border: 2px solid #FF8C00;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* About CSS */
+
+#about_main_div {
+    padding: 25px;
+}
+
+.about_div_content {
+    align-items: flex-start;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.about_img_plus {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.about_img_plus h2 {
+    color: #000;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 20px;
+}
+
+.about_img_plus img {
+    border: 2px solid #FF1493;
+}
+
+.about_text {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.about_text h1, 
+.about_text h2, 
+.about_text h3, 
+.about_text h4, 
+.about_text h5, 
+.about_text p {
+    color: #000;
+}
+
+.about_text h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.about_text_content {
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Media CSS */
+
+
+@media screen and (max-width: 1850px) {
+    .middle-img-plac-txt p {
+        margin-top: 10px;
+    }
+} 
+
+@media screen and (max-width: 1540px) {
+    .middle-img-plac-txt p {
+        width: 210px;
+        height: 150px;
+        font-size: 13px;
+    }
+    
+    .first-img-middle-plac {
+        width: 210px;
+        height: auto;
+    }
+    
+    .img-elevkar-itg img {
+        width: 210px;
+        height: 200px;
+    }
+    
+    .merch img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .info-img img {
+        width: 525px;
+        height: 525px;
+    }
+    
+    .info-txt {
+        width: 550px;
+    }
+    
+    .info-txt h2 {
+        font-size: 49px;
+    }
+    
+    i.fa-cart-arrow-down {
+        font-size: 69px;
+    }
+    
+    .info-txt p {
+        font-size: 18px;
+    }
+
+    #p-show {
+        font-size: 22px;
+    }
+
+    .shopping_cart_mini {
+        width: 400px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table thead th {
+        font-size: 16px;
+        width: 10%;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td,
+    .shopping_cart_mini .simpleCart_items table tbody td a {
+        font-size: 11px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td a:hover {
+        padding: 1px;
+    }
+
+    .shopping_cart_mini .simpleCart_items table tbody td input {
+        font-size: 11px;
+    }
+    
+}
+
+@media screen and (max-width: 1517px) {
+    .info-txt {
+        margin: 0;
+    }
+    
+    .info-img img {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .info-img img {
+        width: 550px;
+        height: 550px;
+    }
+    
+    .img-bar-top-href {
+        display: none;
+    }
+    
+    .headline-text h1 {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .info-img img {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .headline-text h1 {
+        font-size: 40px;
+        padding: 0;
+        text-align: center;
+        height: auto;
+    }
+    
+    i.fa-cart-plus {
+        position: absolute;
+        top: 10%;
+        left: 40%;
+        font-size: 3rem;
+        color: #000;
+    }   
+    
+    i.fa-cart-plus:hover {
+        background: none;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .middle-img-plac-txt {
+        justify-content: center;
+    }
+
+    .first-img-middle-plac {
+        width: 200px;
+        height: auto;
+    }
+    
+    .middle-img-plac-txt p {
+        width: 150px;
+        height: auto;
+        font-size: 11px;
+    }
+    
+    .img-vertikal-itg-href img {
+        width: 200px;
+        height: auto;
+    }
+    
+    .social-media {
+        width: 200px;
+        height: auto;
+    }
+    
+    i.fa {
+        width: 3rem;
+        height: 2.25rem;
+        padding-top: 0.25rem;
+        background-color: transparent;
+    }
+    
+    .fa-instagram:hover {
+        color: dodgerblue;
+        background-color: transparent;
+    }
+
+    .fa-facebook:hover {
+        color: deeppink;
+        background-color: transparent;
+    }
+
+    .fa-twitter:hover {
+        background-color: transparent;
+        color: darkorange;
+    }
+    
+    .social-media li {
+        margin: 0.25rem;
+    }
+    
+    .merch img {
+        width: 200px;
+        height: 200px;
+        padding: 2px;
+    }
+    
+    i.fa-cart-plus {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+    
+    .info-img img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .info-txt {
+        max-width: 200px;
+    }
+    
+    .info-txt h2 {
+        font-size: 40px;
+    }
+    
+    .info-txt p {
+        font-size: 12px;
+    }
+    
+    i.fa-cart-arrow-down {
+        font-size: 40px;
+    }
+}
