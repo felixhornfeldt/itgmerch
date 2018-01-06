@@ -46,11 +46,9 @@ def index(request):
     # Get order, add to session
     if request.method == "POST":
         order_dict = request.POST
-        # total = order_dict['total']
         if order_dict['itemCount'] == '0':
             return HttpResponseRedirect('/')
 
-        # request.session['total'] = total
         request.session['order'] = order_dict
 
     return HttpResponseRedirect("/soc/login/google-oauth2/?next=/order/review")
@@ -129,7 +127,6 @@ def login(request):
             return HttpResponseRedirect('/order/manage/')
         else:
             # Return an 'invalid login' error message.
-
             return HttpResponseRedirect('/order/login/')
     else:
         form = LoginForm()

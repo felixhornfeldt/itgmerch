@@ -21,9 +21,6 @@ def product(request):
         product_id = request.GET.get('id', '999')
         actual_product = Product.objects.get(id_n=product_id)
         sizes = eval(actual_product.sizes)
-        # print(product_id)
-        # if int(product_id) == 1:
-        #    return HttpResponse('Hey you made it!!!')
 
         context = {
             'product': actual_product,
@@ -42,4 +39,3 @@ def cart(request):
         return HttpResponseRedirect('/order/')
     else:
         return render(request, 'main/cart.html')
-
