@@ -22,5 +22,5 @@ urlpatterns = [
     url(r'', include('main.urls')),
     url(r'^order/', include('order.urls')),
     url("^soc/", include("social_django.urls", namespace="social")),
-
+    url(r'^slutsalt/', include('slutsalt.urls'))
 ]
