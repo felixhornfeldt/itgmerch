@@ -20,11 +20,12 @@ def email(usr_email, name, order_number, order):
         order_text += "<td>" + order[('item_price_' + str(i))] + "</td>"
         order_text += "</tr>"
         
+        total += (int(order[('item_quantity_' + str(i))]) * int(order[('item_price_' + str(i))]))
         
         # order_text += f"<p>Grand total: {total}</p>"
 
-    total = order['total'] 
-    
+    # total = order['total'] 
+
     msg_plain = "Read html plz." # render_to_string('templates/email.txt', {'some_params': some_params})
     msg_html = render_to_string('order/email.html', {'name': name, 'order_number': order_number, 'order': order_text, 'total':total})
 
