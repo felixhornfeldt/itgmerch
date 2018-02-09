@@ -8,7 +8,8 @@ Set to launch in the end of October.
 Selling merch for IT-Gymnasiet Göteborg.
 
 ### TODO - server side
-+ Decide whether static content or cdn for images
++ Add keychain as product
++ Add urls.py to slutsålt module
 
 ### TODO - front-end
 
