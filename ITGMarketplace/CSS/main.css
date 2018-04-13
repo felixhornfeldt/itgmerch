@@ -961,6 +961,7 @@ i.fa-cart-arrow-down:hover {
     .empty_shopping_cart {
         font-size: 12px;
     }
+}
 
 @media screen and (max-width:350px) {
     .headline-text h1 {
